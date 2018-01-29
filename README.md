@@ -9,6 +9,7 @@ biology.
 
 - [Game Representations](#game-representations)
 - [Classification of Games](#classification-of-games)
+- [Commonly Known Games](#commonly-known-games)
 
 ## Game Representations
 
@@ -102,14 +103,14 @@ Includes timing of moves. Usually represented by a tree.
   </tr>
 </table>
 
-## Common Games
+## Commonly Known Games
 
 #### Prisoner's Dilemma
 
-|                 | She stays silent  | She betrays     |
-| --------------- | ----------------- | --------------- |
-| He stays silent | -1,-1             | -3,0            |
-| He betrays      | 0,-3              | **-2,-2**       |
+|                 | **Stay silent**       | **Betray**          |
+| ---             | ---                   | ---                 |
+| **Stay silent** | -1,-1                 | -3,0                |
+| **Betray**      | 0,-3                  | **-2,-2**           |
 
 - NE is to betray for both players. 
 - This is a dominant strategies NE. 
@@ -117,20 +118,20 @@ Includes timing of moves. Usually represented by a tree.
 
 #### Matching Pennies
  
-|                  | She plays heads   | She plays tails  |
-| ---------------- | ----------------- | ---------------- |
-| He plays heads   | 1,-1              | -1,1             |
-| He plays tails   | -1,1              | 1,-1             |
+|                      | **Play heads**      | **Play tails**     |
+| ----                 | ---                 | ---                |
+| **Play heads**       | 1,-1                | -1,1               |
+| **Play tails**       | -1,1                | 1,-1               |
  
 - It's a zero-sum game.
 - There is a single NE in mixed strategies: each player chooses heads or tails with equal probability.
 
- #### Battle of the sexes
+ #### Battle of the Sexes
  
-|                      | She goes to opera | She goes to football |
-| -------------------- | ----------------- | -------------------- |
-| He goes to opera     | 3,2               | 0,0                  |
-| He goes to football  | 0,0               | 2,3                  |
+|                          | **Go to opera**       | **Go to football**       |
+| ---                      | ---                   | ---                      |
+| **Go to opera**          | **3,2**               | 0,0                      |
+| **Go to football**       | 0,0                   | **2,3**                  |
  
 - There are 3 NE:
   - Both players go to opera
