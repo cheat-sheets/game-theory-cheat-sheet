@@ -7,8 +7,38 @@ biology.
 
 ## Table of Content
 
+- [Defining Games](#defining-games)
+  - [Key Ingredients](#key-ingredients)
+  - [Game Representations](#game-representations)
 - [Classification of Games](#classification-of-games)
-- [Game Representations](#game-representations)
+
+## Defining Games
+
+### Key Ingredients
+
+**Players**: who are the decision makers?
+- People? Governments? Companies? Somebody employed by a Company?...
+
+**Actions**: what can the players do?
+- Enter a bid in an auction? Decide whether to end a strike? Decide when to sell a stock? Decide how to vote?...
+
+**Payoffs**: what motivates players?
+- Do they care about some profit? Do they care about other players?...
+
+
+### Game Representations
+
+#### Normal form
+
+Lists what payoffs players get as a function of their actions. Usually represented by a matrix:
+
+![Simple overview](./assets/defining-games/normal-form.png)
+
+#### Extensive form
+
+Includes timing of moves. Usually represented by a tree.
+
+![Simple overview](./assets/defining-games/extensive-form.png)
 
 ## Classification of Games
 
