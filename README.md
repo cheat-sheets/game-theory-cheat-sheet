@@ -7,14 +7,10 @@ biology.
 
 ## Table of Content
 
-- [Defining Games](#defining-games)
-  - [Key Ingredients](#key-ingredients)
-  - [Game Representations](#game-representations)
+- [Game Representations](#game-representations)
 - [Classification of Games](#classification-of-games)
 
-## Defining Games
-
-### Key Ingredients
+## Game Representations
 
 **Players**: who are the decision makers?
 - People? Governments? Companies? Somebody employed by a Company?...
@@ -25,20 +21,17 @@ biology.
 **Payoffs**: what motivates players?
 - Do they care about some profit? Do they care about other players?...
 
-
-### Game Representations
-
 #### Normal form
 
 Lists what payoffs players get as a function of their actions. Usually represented by a matrix:
 
-![Simple overview](./assets/defining-games/normal-form.png)
+![Normal form](./assets/defining-games/normal-form.png)
 
 #### Extensive form
 
 Includes timing of moves. Usually represented by a tree.
 
-![Simple overview](./assets/defining-games/extensive-form.png)
+![Extensive form](./assets/defining-games/extensive-form.png)
 
 ## Classification of Games
 
@@ -108,3 +101,38 @@ Includes timing of moves. Usually represented by a tree.
     </td>
   </tr>
 </table>
+
+## Common Games
+
+#### Prisoner's Dilemma
+
+|                 | She stays silent  | She betrays     |
+| --------------- | ----------------- | --------------- |
+| He stays silent | -1,-1             | -3,0            |
+| He betrays      | 0,-3              | **-2,-2**       |
+
+- NE is to betray for both players. 
+- This is a dominant strategies NE. 
+- It is also the only non Pareto optimal outcome in this game.
+
+#### Matching Pennies
+ 
+|                  | She plays heads   | She plays tails  |
+| ---------------- | ----------------- | ---------------- |
+| He plays heads   | 1,-1              | -1,1             |
+| He plays tails   | -1,1              | 1,-1             |
+ 
+- It's a zero-sum game.
+- There is a single NE in mixed strategies: each player chooses heads or tails with equal probability.
+
+ #### Battle of the sexes
+ 
+|                      | She goes to opera | She goes to football |
+| -------------------- | ----------------- | -------------------- |
+| He goes to opera     | 3,2               | 0,0                  |
+| He goes to football  | 0,0               | 2,3                  |
+ 
+- There are 3 NE:
+  - Both players go to opera
+  - Both players go to football
+  - Mixed strategies NE: He goes to opera with probability 3/5, She goes to opera with probability 2/5.
