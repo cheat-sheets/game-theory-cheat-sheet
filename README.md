@@ -145,8 +145,8 @@ Includes timing of moves. Usually represented by a tree.
  
 |                      | **Play heads**      | **Play tails**     |
 | ----                 | ---                 | ---                |
-| **Play heads**       | 1,1                 | 0,0                |
-| **Play tails**       | 0,0                 | 0,0                |
+| **Play heads**       | **1,1**             | 0,0                |
+| **Play tails**       | 0,0                 | **0,0**            |
  
 - There are 2 NE (a rare case when there is an even number of NE):
   - Both players play heads
@@ -156,8 +156,8 @@ Includes timing of moves. Usually represented by a tree.
  
 |                      | **Swerve**          | **Straight**        |
 | ----                 | ---                 | ---                 |
-| **Swerve**           | 0,0                 | -1,1                |
-| **Straight**         | 1,-1                | -10,-10             |
+| **Swerve**           | 0,0                 | **-1,1**            |
+| **Straight**         | **1,-1**            | -10,-10             |
  
 - Anti-coordination games - it is mutually beneficial for the players to play different strategies.
 - There are 3 NE:
