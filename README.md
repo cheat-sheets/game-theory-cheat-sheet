@@ -10,6 +10,7 @@ biology.
 - [Game Representations](#game-representations)
 - [Classification of Games](#classification-of-games)
 - [Commonly Known Games](#commonly-known-games)
+- [Useful Links](#useful-links)
 
 ## Game Representations
 
@@ -103,30 +104,32 @@ Includes timing of moves. Usually represented by a tree.
   </tr>
 </table>
 
-## Commonly Known Games
+## [Commonly Known Games](https://en.wikipedia.org/wiki/List_of_games_in_game_theory)
 
-#### Prisoner's Dilemma
+#### [Prisoner's Dilemma](https://en.wikipedia.org/wiki/Prisoner%27s_dilemma)
 
 |                 | **Stay silent**       | **Betray**          |
 | ---             | ---                   | ---                 |
 | **Stay silent** | -1,-1                 | -3,0                |
 | **Betray**      | 0,-3                  | **-2,-2**           |
 
-- NE is to betray for both players. 
+- There is 1 NE:
+  - Both players betray. 
 - This is a dominant strategies NE. 
 - It is also the only non Pareto optimal outcome in this game.
 
-#### Matching Pennies
+#### [Matching Pennies](https://en.wikipedia.org/wiki/Matching_pennies)
  
 |                      | **Play heads**      | **Play tails**     |
 | ----                 | ---                 | ---                |
 | **Play heads**       | 1,-1                | -1,1               |
 | **Play tails**       | -1,1                | 1,-1               |
  
+- There is 1 NE:
+  - Mixed strategies NE: each player chooses heads or tails with probability 0.5.
 - It's a zero-sum game.
-- There is a single NE in mixed strategies: each player chooses heads or tails with equal probability.
 
- #### Battle of the Sexes
+#### [Battle of the Sexes](https://en.wikipedia.org/wiki/Battle_of_the_sexes_(game_theory))
  
 |                          | **Go to opera**       | **Go to football**       |
 | ---                      | ---                   | ---                      |
@@ -137,3 +140,37 @@ Includes timing of moves. Usually represented by a tree.
   - Both players go to opera
   - Both players go to football
   - Mixed strategies NE: He goes to opera with probability 3/5, She goes to opera with probability 2/5.
+
+#### Free Money
+ 
+|                      | **Play heads**      | **Play tails**     |
+| ----                 | ---                 | ---                |
+| **Play heads**       | 1,1                 | 0,0                |
+| **Play tails**       | 0,0                 | 0,0                |
+ 
+- There are 2 NE (a rare case when there is an even number of NE):
+  - Both players play heads
+  - Both players play tails
+  
+#### [Chicken](https://en.wikipedia.org/wiki/Chicken_(game))
+ 
+|                      | **Swerve**          | **Straight**        |
+| ----                 | ---                 | ---                 |
+| **Swerve**           | 0,0                 | -1,1                |
+| **Straight**         | 1,-1                | -10,-10             |
+ 
+- Anti-coordination games - it is mutually beneficial for the players to play different strategies.
+- There are 3 NE:
+  - He swerves, she goes straight
+  - He goes straight, she swerves
+  - Mixed strategy NE: He swerves with probability 9/10, She swerves with probability 9/10
+  
+#### [Centipede Game](https://en.wikipedia.org/wiki/Centipede_game)
+
+![Centipede Game](./assets/commonly-known-games/centipede-game.png)
+
+- SPE: each player chooses to defect at every opportunity.
+  
+## Useful Links
+
+- Game Solver (2x2 matrix games): http://mindyourdecisions.com/GameSolver.html
