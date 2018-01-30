@@ -140,6 +140,18 @@ Includes timing of moves. Usually represented by a tree.
   - Both players go to opera
   - Both players go to football
   - Mixed strategies NE: He goes to opera with probability 3/5, She goes to opera with probability 2/5.
+  
+#### Stag Hunt
+ 
+|                          | **Hunt stag**         | **Hunt hare**            |
+| ---                      | ---                   | ---                      |
+| **Hunt stag**            | **2,2**               | 0,1                      |
+| **Hunt hare**            | 1,0                   | **1,1**                  |
+ 
+- There are 3 NE:
+  - Both players hunt stag
+  - Both players hunt hare
+  - Mixed strategies NE: He hunts stag with probability 2/3, She hunts stag with probability 2/3.
 
 #### Free Money
  
