@@ -28,13 +28,19 @@ biology.
 
 #### Normal form
 
-Lists what payoffs players get as a function of their actions. Usually represented by a matrix:
+- Lists what payoffs players get as a function of their actions. 
+- Does not incorporate any notion of sequence, or time, of the actions of the players.
+- Usually represented by a matrix.
 
-![Normal form](./assets/defining-games/normal-form.png)
+|                 | **Stay silent**       | **Betray**          |
+| ---             | ---                   | ---                 |
+| **Stay silent** | -1,-1                 | -3,0                |
+| **Betray**      | 0,-3                  | **-2,-2**           |
 
 #### Extensive form
 
-Includes timing of moves. Usually represented by a tree.
+- Includes timing of moves. 
+- Usually represented by a tree.
 
 ![Extensive form](./assets/defining-games/extensive-form.png)
 
@@ -47,62 +53,62 @@ Includes timing of moves. Usually represented by a tree.
   </colgroup>
   <tr>
     <td>
-      <p><b>Simultaneous game</b> (a.k.a. Strategy game) - a game where both players move simultaneously, or if they do
+      <p><b>Simultaneous games</b> (a.k.a. Strategy games) - games where both players move simultaneously, or if they do
        not move simultaneously, the later players are unaware of the earlier players' actions (making them effectively
         simultaneous).
       <p>Usually normal form is used to represent simultaneous games.
     </td>
     <td>
-      <p><b>Sequential game</b> (a.k.a. Extensive game) - a game where later players have some knowledge about earlier 
+      <p><b>Sequential games</b> (a.k.a. Extensive game) - games where later players have some knowledge about earlier 
       actions.
       <p>Usually extensive form is used to represent sequential games.
     </td>
   </tr>
   <tr>
     <td>
-      <b>Cooperative game</b> - a game where the players are able to form binding commitments externally enforced (e.g.
+      <b>Cooperative games</b> - games where the players are able to form binding commitments externally enforced (e.g.
       through contract law).
     </td>
     <td>
-      <b>Non-cooperative game</b> - a game where players cannot form alliances or if all agreements need to be
+      <b>Non-cooperative games</b> - games where players cannot form alliances or if all agreements need to be
       self-enforcing (e.g. through credible threats).
     </td>
   </tr>
   <tr>
     <td>
-      <b>Zero-sum game</b> - a game in which each participant's gain or loss of utility is exactly balanced by the
+      <b>Zero-sum games</b> - games in which each participant's gain or loss of utility is exactly balanced by the
       losses or gains of the utility of the other participants.
     </td>
     <td>
-      <b>Non-zero-sum game</b> - a game in which the interacting parties' aggregate gains and losses can be less
+      <b>Non-zero-sum games</b> - games in which the interacting parties' aggregate gains and losses can be less
       than or more than zero.
     </td>
   </tr>
   <tr>
     <td>
-      <b>Perfect information game</b> - a game in which all players know the moves previously made by all other players.
+      <b>Perfect information games</b> - games in which all players know the moves previously made by all other players.
     </td>
     <td>
-      <b>Imperfect information game</b> - a game in which some players don't know the moves previously made by other 
+      <b>Imperfect information games</b> - games in which some players don't know the moves previously made by other 
       players.
     </td>
   </tr>
   <tr>
     <td>
-      <b>Complete information game</b> - a game in which all players know the strategies and payoffs available to the 
+      <b>Complete information games</b> - games in which all players know the strategies and payoffs available to the 
       other players.
     </td>
     <td>
-      <b>Incomplete information game</b> - a game in which some players don't know the strategies or payoffs available
+      <b>Incomplete information games</b> - games in which some players don't know the strategies or payoffs available
       to the other players.
     </td>
   </tr>
   <tr>
     <td>
-      <b>Finite game</b> - a game that lasts for finite number of moves.
+      <b>Finite games</b> - games that last for finite number of moves.
     </td>
     <td>
-      <b>Infinite game</b> - a game that lasts for infinite number of moves.
+      <b>Infinite games</b> - games that last for infinite number of moves.
     </td>
   </tr>
 </table>
@@ -144,7 +150,7 @@ Includes timing of moves. Usually represented by a tree.
   - Both players go to football
   - Mixed strategies NE: He goes to opera with probability 3/5, She goes to opera with probability 2/5.
   
-#### Stag Hunt
+#### [Stag Hunt](https://en.wikipedia.org/wiki/Stag_hunt)
  
 |                          | **Hunt stag**         | **Hunt hare**            |
 | ---                      | ---                   | ---                      |
@@ -167,7 +173,7 @@ Includes timing of moves. Usually represented by a tree.
   - Both players play heads
   - Both players play tails
   
-#### [Chicken](https://en.wikipedia.org/wiki/Chicken_(game))
+#### [Chicken Game](https://en.wikipedia.org/wiki/Chicken_(game))
  
 |                      | **Swerve**          | **Straight**        |
 | ----                 | ---                 | ---                 |
@@ -192,7 +198,7 @@ Includes timing of moves. Usually represented by a tree.
 his strategy given what the other players are doing.
 
 **Nash Equilibrium** (alternative definition) - a set of strategies, one for each player, such that every player's
-strategy is a best response to what the other players are doing.
+strategy is the best response to what the other players are doing.
 
 **Best Response** - a strategy such that a player cannot gain more utility from switching to a different strategy,
 given what all other players are doing.
@@ -231,7 +237,31 @@ Almost all finite games have a finite number of solutions, and that number is al
 
 ## Extensive-Form Games
 
+#### Perfect Information Extensive-form Games
 
+![Perfect Information Extensive-form Game](./assets/extensive-form-games/perfect-information-extensive-form-game.png)
+
+All players know the moves previously made by all other players.
+
+Every game in extensive form can be converted into normal form. The reverse transformation is not always possible, 
+e.g. matching pennies cannot be written as a perfect information extensive form game.
+
+#### Theorem
+
+Every perfect information game in extensive form has a pure strategy Nash equilibrium.
+
+#### Imperfect Information Extensive-form Games
+
+![Imperfect Information Extensive-form Game](./assets/extensive-form-games/imperfect-information-extensive-form-game.png)
+
+Player 2 doesn't know the move made by Player 1.
+
+**Subgame Perfect Equilibrium** - Nash equilibrium that represents a Nash equilibrium of every subgame in the original 
+game. It's a refinement of the Nash equilibrium that eliminates non-credible threats.
+
+**Non-credible Threat** - a threat made by a player in an extensive form game which would not be 
+in the best interest for the player to carry out. The hope is that the threat is believed in which case there is 
+no need to carry it out. While Nash equilibria may depend on non-credible threats, Backward Induction eliminates them. 
 
 ## Repeated Games
 
