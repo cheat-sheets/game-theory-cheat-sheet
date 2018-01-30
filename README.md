@@ -229,7 +229,7 @@ who strictly prefers `o` to `o'`.
 
 #### Nash's Theorem
 
-Every finite, non-cooperative game of two or more players has a Mixed Strategy Nash Equilibrium. (John Nash, 1950)
+Every finite, non-cooperative game of two or more players has a mixed strategy Nash equilibrium. (John Nash, 1950)
 
 #### The Oddness Theorem
 
