@@ -265,6 +265,49 @@ no need to carry it out. While Nash equilibria may depend on non-credible threat
 
 ## Repeated Games
 
+**Repeated Game** - an extensive form game that consists of a number of repetitions of some base game, called 
+a stage game. The stage game is usually one of the well-studied 2-person games.
+
+**Discount Factor** - a number between 0 and 1 that represents the time value of consumption and probability of 
+continuation. A higher discount factor means more patience and higher chance of surviving into the next period.
+
+**The One-Shot Deviation Principle** - in finite or infinitely repeated games with discounting, a set of strategies 
+is a subgame perfect equilibrium iff no player can profitably deviate from his strategy at a single stage and maintain 
+his strategy everywhere else.
+
+**Grim Trigger** - play some set of strategies with higher payoff than NE, if anyone deviates then play NE forever.
+
+**Tit-for-Tat** - a strategy in the infinitely repeated prisoner's dilemma:
+  - Begin by cooperating
+  - For all future periods, copy opponent's strategy from the previous period.
+
+Both players playing tit-for-tat is not subgame perfect.
+  
+**Stochastic Game** - a generalization of repeated games.
+  - agents repeatedly play games from a set of normal-form games.
+  - the game played at any iteration depends on the previous game played and on the actions taken by all agents in 
+  that game.
+
+#### Folk theorem 
+  - Take a Nash equilibrium from the stage game
+  - Consider any alternative set of strategies such that the expected utility for those strategies in the stage game is 
+  strictly greater for all players
+  - If discounting factor is sufficiently high, a subgame perfect equilibrium exists in which players use those 
+  alternative strategies on the equilibrium path.
+  
+Implications of the folk theorem:
+  - If the purpose of equilibrium is to predict or explain outcomes, subgame perfect equilibrium predicts and explains
+  everything
+  - Predicting and explaining everything is essentially predicting and explaining nothing
+  
+#### Learning in Repeated Games:
+**Fictitious Play**: each player maintains explicit belief about the other players.
+  - Initialize beliefs about the opponent's strategies.
+  - Each turn: 
+    - Play best response to the assessed strategy of the opponent
+    - Observe the opponent's actual play and update beliefs accordingly.
+
+**No-regret Learning**:  
 
 ## Incomplete Information Games
 
