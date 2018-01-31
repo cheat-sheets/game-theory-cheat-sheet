@@ -13,6 +13,7 @@ biology.
 - [Nash Equilibrium](#nash-equilibrium)
 - [Extensive-Form Games](#extensive-form-games)
 - [Repeated Games](#repeated-games)
+- [Bayesian Games](#bayesian-games)
 - [Useful Links](#useful-links)
 
 ## Game Representations
@@ -127,6 +128,12 @@ biology.
 - This is a dominant strategies NE. 
 - It is also the only non Pareto optimal outcome in this game.
 
+#### [Coordination Games](https://en.wikipedia.org/wiki/Coordination_game)
+
+- [Battle of the Sexes](#battle-of-the-sexes)
+- [Stag Hunt](#stag-hunt)
+- [Pure Coordination Game](#pure-coordination-game)
+
 #### [Matching Pennies](https://en.wikipedia.org/wiki/Matching_pennies)
  
 |                      | **Play heads**      | **Play tails**     |
@@ -161,6 +168,18 @@ biology.
   - Both players hunt stag
   - Both players hunt hare
   - Mixed strategies NE: He hunts stag with probability 2/3, She hunts stag with probability 2/3.
+
+#### Pure Coordination Game
+ 
+|                          | **Go to Party**       | **Stay Home**            |
+| ---                      | ---                   | ---                      |
+| **Go to Party**          | **10,10**             | 0,0                      |
+| **Stay Home**            | 0,0                   | **5,5**                  |
+ 
+- There are 3 NE:
+  - Both players go to party
+  - Both players stay home
+  - Mixed strategies NE: He goes to party with probability 1/3, She goes to party with probability 1/3.
 
 #### Free Money
  
@@ -222,6 +241,17 @@ a smaller payoff than some other strategy.
   - Strictly Dominated Strategy - same as Dominated Strategy
   - Weakly Dominated Strategy - a strategy, such that, regardless of what any other players do, the strategy earns a 
   player a smaller than or equal to some other strategy payoff.
+ 
+[Subgame Perfect Equilibrium](#extensive-form-games)
+
+[Bayesian Nash Equilibrium](#bayesian-game)
+
+Nash equilibrium depending on the type of game:
+ 
+|                     | **Simultaneous**       | **Sequential**          |
+| ---                 | ---                    | ---                     |
+| **Complete**        | Nash                   | Subgame Perfect Nash    |
+| **Incomplete**      | Bayesian Nash          | Perfect Bayesian Nash   |
   
 **Pareto-optimal Outcome** - an outcome, such that there is no other outcome that Pareto-dominates it. An outcome `o` 
 Pareto-dominates outcome `o'` if it's at least as good for every player as outcome `o'`, and there is some player
@@ -256,6 +286,8 @@ Every perfect information game in extensive form has a pure strategy Nash equili
 
 Player 2 doesn't know the move made by Player 1.
 
+**Backward Induction** - identify the equilibria in the bottom-most trees, and adopt these as one moves up the tree.
+
 **Subgame Perfect Equilibrium** - Nash equilibrium that represents a Nash equilibrium of every subgame in the original 
 game. It's a refinement of the Nash equilibrium that eliminates non-credible threats.
 
@@ -288,7 +320,7 @@ Both players playing tit-for-tat is not subgame perfect.
   - the game played at any iteration depends on the previous game played and on the actions taken by all agents in 
   that game.
 
-#### Folk theorem 
+#### The Folk theorem 
   - Take a Nash equilibrium from the stage game
   - Consider any alternative set of strategies such that the expected utility for those strategies in the stage game is 
   strictly greater for all players
@@ -309,7 +341,20 @@ Implications of the folk theorem:
 
 **No-regret Learning**:  
 
-## Incomplete Information Games
+## Bayesian Games
+
+**Bayesian Game** - a set of games that differ only in their payoffs, a common prior defined over them, and a 
+partition structure over the games for each agent.
+
+Bayesian game is a representation of a game with incomplete information.
+
+**Bayesian Nash Equilibrium** - a set of strategies, one for each type of player, such that no type has incentive to change his or her strategy given the beliefs about the types and what the  other types are doing.
+
+**Ex Ante Dominated Strategy** - a strategy for a player such that an alternative strategy for that player provides a greater payoff for that player regardless of all other players' strategies
+
+**Interim Dominated Strategy** - a strategy for a type such that an alternative strategy for that type provides a greater payoff for that type regardless of all other players' strategies
+
+Interim dominated strategy implies ex ante dominated strategies. The reverse is not always true.
 
 #### The Purification Theorem
 
