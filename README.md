@@ -43,6 +43,9 @@ biology.
 - Includes timing of moves. 
 - Usually represented by a tree.
 
+**Positive affine transformation**: au + b, where a > 0
+and b is any real number. Expected utilities are identical to positive affine transformations. 
+
 ![Extensive form](./assets/defining-games/extensive-form.png)
 
 ## Classification of Games
@@ -244,7 +247,7 @@ a smaller payoff than some other strategy.
  
 [Subgame Perfect Equilibrium](#extensive-form-games)
 
-[Bayesian Nash Equilibrium](#bayesian-game)
+[Bayesian Nash Equilibrium](#bayesian-games)
 
 Nash equilibrium depending on the type of game:
  
