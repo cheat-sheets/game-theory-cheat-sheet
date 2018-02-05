@@ -46,7 +46,7 @@ biology.
 
 [Extensive Form Games](#extensive-form-games)
 
-#### Transformations of Games
+---
 
 **Positive affine transformation**: au + b, where a > 0
 and b is any real number. Expected utilities are identical to positive affine transformations. 
@@ -258,7 +258,9 @@ Nash equilibrium for different types of game:
 | ---                 | ---                    | ---                     |
 | **Complete**        | Nash                   | Subgame Perfect Nash    |
 | **Incomplete**      | Bayesian Nash          | Perfect Bayesian Nash   |
-  
+
+---
+ 
 **Pareto-optimal Outcome** - an outcome, such that there is no other outcome that Pareto-dominates it. An outcome `o` 
 Pareto-dominates outcome `o'` if it's at least as good for every player as outcome `o'`, and there is some player
 who strictly prefers `o` to `o'`.  
@@ -320,6 +322,8 @@ his strategy everywhere else.
   - For all future periods, copy opponent's strategy from the previous period.
 
 Both players playing tit-for-tat is not subgame perfect.
+
+--- 
   
 **Stochastic Game** - a generalization of repeated games.
   - agents repeatedly play games from a set of normal-form games.
@@ -374,6 +378,12 @@ Formally, the coalitional game consists of a finite set of players N, called the
 and a characteristic function v: 2 ^ N -> ℝ from the set of all possible coalitions of players to a set of payments 
 that satisfies v(∅)=0.
 
+Two ways for allocating payoffs:
+ - Shapley value: based on marginal contributions - what does each player contribute to each possible coalition; 
+ "fair" distribution.
+ - Core: based on coalitional threats - each coalition must get at least what it can generate alone; "stable" 
+ distribution. 
+
 **The Shapley Value** allocates the value of a group according to marginal contribution calculations.
 
 ![Shapley Value](./assets/coalitional-games/shapley-value.svg)
@@ -391,13 +401,37 @@ that satisfies the 3 axioms
   - Additivity: if we can separate the game into two subgames such that the value in every coalition is the sum of values 
   in the two subgames, then the allocation in the game should be equal to the sum of allocations in the two subgames.
 
+---
+
 **The core** - the set of payoff vectors under which no coalition has a value greater than the sum of its members' 
 payoffs. Therefore, no coalition has incentive to leave the grand coalition and receive a larger payoff.
- - It's analogous to Nash equilibrium, except that it allows deviations by groups of agents.
+ - It's **analogous to Nash equilibrium**, except that it allows deviations by groups of agents.
  
+---
 
+A game is **simple** if for all coalitions the value of the coalition is either 0 or 1.
+
+A player is a **veto** player if the value of all coalitions that don't involve the player is 0.
+
+#### Theorem
+
+In a simple game the core is empty iff there is no veto player. If there are veto players, the core consists of all
+payoff vectors in which the nonveto players get 0. 
+
+---
+
+A game is **convex** if its characteristic function v is supermodular:
+
+![Convex Cooperative Games](./assets/coalitional-games/convex-cooperative-games.svg)
+
+that is, "the incentives for joining a coalition increase as the coalition grows".
+
+#### Theorem
+
+Every convex game has a nonempty core.
+
+In every convex game, the Shapley value is in the core.
                
-
 
 ## Useful Links
 
