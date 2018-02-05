@@ -252,7 +252,7 @@ a smaller payoff than some other strategy.
 
 [Bayesian Nash Equilibrium](#bayesian-games)
 
-Nash equilibrium depending on the type of game:
+Nash equilibrium for different types of game:
  
 |                     | **Simultaneous**       | **Sequential**          |
 | ---                 | ---                    | ---                     |
