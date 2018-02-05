@@ -273,7 +273,7 @@ Almost all finite games have a finite number of solutions, and that number is al
 
 #### Perfect Information Extensive-form Games
 
-![Perfect Information Extensive-form Game](./assets/extensive-form-games/perfect-information-extensive-form-game.png)
+![Perfect Information Extensive-form Game](./assets/extensive-form-games/perfect-information-extensive-form-game.svg)
 
 All players know the moves previously made by all other players.
 
@@ -286,7 +286,7 @@ Every perfect information game in extensive form has a pure strategy Nash equili
 
 #### Imperfect Information Extensive-form Games
 
-![Imperfect Information Extensive-form Game](./assets/extensive-form-games/imperfect-information-extensive-form-game.png)
+![Imperfect Information Extensive-form Game](./assets/extensive-form-games/imperfect-information-extensive-form-game.svg)
 
 Player 2 doesn't know the move made by Player 1.
 
