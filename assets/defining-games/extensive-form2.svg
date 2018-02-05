@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<svg width="148.406" height="74.0094">
+  <defs> 
+    <marker id="ArrowEnd" viewBox="0 0 10 10" refX="0" refY="5" 
+     markerUnits="strokeWidth" 
+     markerWidth="4" 
+     markerHeight="3" 
+     orient="auto"> 
+        <path d="M 0 0 L 10 5 L 0 10 z" /> 
+    </marker>
+    <marker id="ArrowStart" viewBox="0 0 10 10" refX="10" refY="5" 
+     markerUnits="strokeWidth" 
+     markerWidth="4" 
+     markerHeight="3" 
+     orient="auto"> 
+        <path d="M 10 0 L 0 5 L 10 10 z" /> 
+    </marker> </defs>
+<g>
+<path style="stroke:#000000; stroke-width:0.79701100000000002; fill:none" d="M 74.2 13.6948L 116.719 34.9567"/>
+<text style="stroke:#000000; stroke-width:0.0; fill:#000000; font-family:Times; font-size:11.9552" transform="matrix(1 0 0 1 98.239 21.6007)">
+U
+</text >
+<path style="stroke:#000000; stroke-width:0.79701100000000002; fill:none" d="M 74.2 13.6948L 31.68 34.9567"/>
+<text style="stroke:#000000; stroke-width:0.0; fill:#000000; font-family:Times; font-size:11.9552" transform="matrix(1 0 0 1 41 21.6007)">
+F
+</text >
+<path style="stroke:none; fill:#ffffff" d="M 73.242 13.6827L 73.242 12.6867L 75.235 12.6867L 75.235 14.6787L 73.242 14.6787L 73.242 13.6827z"/>
+<path style="stroke:#000000; stroke-width:0.39850600000000003; fill:none" d="M 75.453 13.6827C 75.453 13.0107 74.91 12.4677 74.239 12.4677C 73.567 12.4677 73.024 13.0107 73.024 13.6827C 73.024 14.3547 73.567 14.8977 74.239 14.8977C 74.91 14.8977 75.453 14.3547 75.453 13.6827z"/>
+<text style="stroke:#000000; stroke-width:0.0; fill:#000000; font-family:Times; font-size:11.9552" transform="matrix(1 0 0 1 71.239 10.0817)">
+1
+</text >
+<path style="stroke:#000000; stroke-width:0.79701100000000002; fill:none" d="M 31.68 34.9567L 52.938 56.2147"/>
+<text style="stroke:#000000; stroke-width:0.0; fill:#000000; font-family:Times; font-size:11.9552" transform="matrix(1 0 0 1 44.961 42.9647)">
+R
+</text >
+<text style="stroke:#000000; stroke-width:0.0; fill:#000000; font-family:Times; font-size:11.9552" transform="matrix(1 0 0 1 44.481 70.3237)">
+0
+</text >
+<text style="stroke:#000000; stroke-width:0.0; fill:#000000; font-family:Times; font-size:11.9552" transform="matrix(1 0 0 1 50.356 70.3237)">
+;
+</text >
+<text style="stroke:#000000; stroke-width:0.0; fill:#000000; font-family:Times; font-size:11.9552" transform="matrix(1 0 0 1 55.637 70.3237)">
+0
+</text >
+<path style="stroke:#000000; stroke-width:0.79701100000000002; fill:none" d="M 31.68 34.9567L 10.418 56.2147"/>
+<text style="stroke:#000000; stroke-width:0.0; fill:#000000; font-family:Times; font-size:11.9552" transform="matrix(1 0 0 1 9.31699 42.9647)">
+A
+</text >
+<text style="stroke:#000000; stroke-width:0.0; fill:#000000; font-family:Times; font-size:11.9552" transform="matrix(1 0 0 1 1.99999 70.3237)">
+5
+</text >
+<text style="stroke:#000000; stroke-width:0.0; fill:#000000; font-family:Times; font-size:11.9552" transform="matrix(1 0 0 1 7.87499 70.3237)">
+;
+</text >
+<text style="stroke:#000000; stroke-width:0.0; fill:#000000; font-family:Times; font-size:11.9552" transform="matrix(1 0 0 1 13.157 70.3237)">
+5
+</text >
+<path style="stroke:none; fill:#ffffff" d="M 30.645 34.9247L 30.645 33.9287L 32.637 33.9287L 32.637 35.9218L 30.645 35.9218L 30.645 34.9247z"/>
+<path style="stroke:none; fill:#000000" d="M 33.055 34.9247C 33.055 34.1437 32.422 33.5107 31.641 33.5107C 30.86 33.5107 30.227 34.1437 30.227 34.9247C 30.227 35.7067 30.86 36.3387 31.641 36.3387C 32.422 36.3387 33.055 35.7067 33.055 34.9247"/>
+<text style="stroke:#000000; stroke-width:0.0; fill:#000000; font-family:Times; font-size:11.9552" transform="matrix(1 0 0 1 28.758 31.3237)">
+2
+</text >
+<path style="stroke:#000000; stroke-width:0.79701100000000002; fill:none" d="M 116.719 34.9567L 137.981 56.2147"/>
+<text style="stroke:#000000; stroke-width:0.0; fill:#000000; font-family:Times; font-size:11.9552" transform="matrix(1 0 0 1 130.039 42.9647)">
+R
+</text >
+<text style="stroke:#000000; stroke-width:0.0; fill:#000000; font-family:Times; font-size:11.9552" transform="matrix(1 0 0 1 129.559 70.3237)">
+0
+</text >
+<text style="stroke:#000000; stroke-width:0.0; fill:#000000; font-family:Times; font-size:11.9552" transform="matrix(1 0 0 1 135.434 70.3237)">
+;
+</text >
+<text style="stroke:#000000; stroke-width:0.0; fill:#000000; font-family:Times; font-size:11.9552" transform="matrix(1 0 0 1 140.715 70.3237)">
+0
+</text >
+<path style="stroke:#000000; stroke-width:0.79701100000000002; fill:none" d="M 116.719 34.9567L 95.457 56.2147"/>
+<text style="stroke:#000000; stroke-width:0.0; fill:#000000; font-family:Times; font-size:11.9552" transform="matrix(1 0 0 1 94.395 42.9647)">
+A
+</text >
+<text style="stroke:#000000; stroke-width:0.0; fill:#000000; font-family:Times; font-size:11.9552" transform="matrix(1 0 0 1 86.961 70.3237)">
+8
+</text >
+<text style="stroke:#000000; stroke-width:0.0; fill:#000000; font-family:Times; font-size:11.9552" transform="matrix(1 0 0 1 92.836 70.3237)">
+;
+</text >
+<text style="stroke:#000000; stroke-width:0.0; fill:#000000; font-family:Times; font-size:11.9552" transform="matrix(1 0 0 1 98.117 70.3237)">
+2
+</text >
+<path style="stroke:none; fill:#ffffff" d="M 115.723 34.9247L 115.723 33.9287L 117.715 33.9287L 117.715 35.9218L 115.723 35.9218L 115.723 34.9247z"/>
+<path style="stroke:none; fill:#000000" d="M 118.133 34.9247C 118.133 34.1437 117.5 33.5107 116.719 33.5107C 115.938 33.5107 115.305 34.1437 115.305 34.9247C 115.305 35.7067 115.938 36.3387 116.719 36.3387C 117.5 36.3387 118.133 35.7067 118.133 34.9247"/>
+<text style="stroke:#000000; stroke-width:0.0; fill:#000000; font-family:Times; font-size:11.9552" transform="matrix(1 0 0 1 113.836 31.3237)">
+2
+</text >
+</g>
+</svg>

@@ -47,7 +47,7 @@ biology.
 **Positive affine transformation**: au + b, where a > 0
 and b is any real number. Expected utilities are identical to positive affine transformations. 
 
-![Extensive form](./assets/defining-games/extensive-form.png)
+![Extensive form](./assets/defining-games/extensive-form2.png)
 
 ## Classification of Games
 
