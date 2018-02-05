@@ -14,6 +14,7 @@ biology.
 - [Extensive-Form Games](#extensive-form-games)
 - [Repeated Games](#repeated-games)
 - [Bayesian Games](#bayesian-games)
+- [Coalitional Games](#coalitional-games)
 - [Useful Links](#useful-links)
 
 ## Game Representations
@@ -363,6 +364,37 @@ Interim dominated strategy implies ex ante dominated strategies. The reverse is 
 
 Almost all mixed strategy Nash equilibria in a complete information game are the limit of pure strategy Bayesian Nash 
 equilibria in an incomplete information game that converges to the complete information game.
+
+## Coalitional Games
+
+**Coalitional Game** is given by specifying a value for every coalition. 
+Formally, the coalitional game consists of a finite set of players N, called the **grand coalition**, 
+and a characteristic function v: 2 ^ N -> ℝ from the set of all possible coalitions of players to a set of payments 
+that satisfies v(∅)=0.
+
+**The Shapley Value** allocates the value of a group according to marginal contribution calculations.
+
+![Shapley Value](./assets/coalitional-games/shapley-value.svg)
+
+where the sum ranges over all |N|! orders R of the players and ![PiR](./assets/coalitional-games/PiR.svg) is the set of 
+players in N which precede i in the order R.
+
+#### Theorem
+
+For any coalitional game, there is a unique payoff division (the Shapley Value) that divides the full payoff of the 
+grand coalition and
+that satisfies the 3 axioms
+  - Symmetry: if players are interchangeable they should be getting the same allocation
+  - Dummy Player: if the amount that a player contributes to any coalition is 0, then his allocation is 0
+  - Additivity: if we can separate the game into two subgames such that the value in every coalition is the sum of values 
+  in the two subgames, then the allocation in the game should be equal to the sum of allocations in the two subgames.
+
+**The core** - the set of payoff vectors under which no coalition has a value greater than the sum of its members' 
+payoffs. Therefore, no coalition has incentive to leave the grand coalition and receive a larger payoff.
+ - It's analogous to Nash equilibrium, except that it allows deviations by groups of agents.
+ 
+
+               
 
 
 ## Useful Links
