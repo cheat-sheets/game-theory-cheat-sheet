@@ -17,6 +17,8 @@ biology.
 - [Coalitional Games](#coalitional-games)
 - [Useful Links](#useful-links)
 
+---
+
 ## Game Representations
 
 **Players**: who are the decision makers?
@@ -50,6 +52,8 @@ biology.
 
 **Positive affine transformation**: au + b, where a > 0
 and b is any real number. Expected utilities are identical to positive affine transformations. 
+
+---
 
 ## Classification of Games
 
@@ -119,6 +123,8 @@ and b is any real number. Expected utilities are identical to positive affine tr
     </td>
   </tr>
 </table>
+
+---
 
 ## [Commonly Known Games](https://en.wikipedia.org/wiki/List_of_games_in_game_theory)
 
@@ -216,6 +222,8 @@ and b is any real number. Expected utilities are identical to positive affine tr
 ![Centipede Game](./assets/commonly-known-games/centipede-game.svg)
 
 - SPE: each player chooses to defect at every opportunity.
+ 
+---
   
 ## Nash Equilibrium
 
@@ -273,6 +281,8 @@ Every finite, non-cooperative game of two or more players has a mixed strategy N
 
 Almost all finite games have a finite number of solutions, and that number is also odd. (Robert Wilson, 1971)
 
+---
+
 ## Extensive-Form Games
 
 #### Perfect Information Extensive-form Games
@@ -303,6 +313,8 @@ game. It's a refinement of the Nash equilibrium that eliminates non-credible thr
 in the best interest for the player to carry out. The hope is that the threat is believed in which case there is 
 no need to carry it out. While Nash equilibria may depend on non-credible threats, Backward Induction eliminates them. 
 
+---
+
 ## Repeated Games
 
 **Repeated Game** - an extensive form game that consists of a number of repetitions of some base game, called 
@@ -330,6 +342,8 @@ Both players playing tit-for-tat is not subgame perfect.
   - the game played at any iteration depends on the previous game played and on the actions taken by all agents in 
   that game.
 
+---
+
 #### The Folk theorem 
   - Take a Nash equilibrium from the stage game
   - Consider any alternative set of strategies such that the expected utility for those strategies in the stage game is 
@@ -351,14 +365,16 @@ Implications of the folk theorem:
 
 **No-regret Learning**:  
 
+---
+
 ## Bayesian Games
 
-**Bayesian Game** - a set of games that differ only in their payoffs, a common prior defined over them, and a 
+**Bayesian Game** (Incomplete Information Game) - a set of games that differ only in their payoffs, a common prior defined over them, and a 
 partition structure over the games for each agent.
 
-Bayesian game is a representation of a game with incomplete information.
-
 **Bayesian Nash Equilibrium** - a set of strategies, one for each type of player, such that no type has incentive to change his or her strategy given the beliefs about the types and what the  other types are doing.
+
+---
 
 **Ex Ante Dominated Strategy** - a strategy for a player such that an alternative strategy for that player provides a greater payoff for that player regardless of all other players' strategies
 
@@ -366,10 +382,14 @@ Bayesian game is a representation of a game with incomplete information.
 
 Interim dominated strategy implies ex ante dominated strategies. The reverse is not always true.
 
+---
+
 #### The Purification Theorem
 
 Almost all mixed strategy Nash equilibria in a complete information game are the limit of pure strategy Bayesian Nash 
 equilibria in an incomplete information game that converges to the complete information game.
+
+---
 
 ## Coalitional Games
 
@@ -380,9 +400,11 @@ that satisfies v(∅)=0.
 
 Two ways for allocating payoffs:
  - Shapley value: based on marginal contributions - what does each player contribute to each possible coalition; 
- "fair" distribution.
- - Core: based on coalitional threats - each coalition must get at least what it can generate alone; "stable" 
- distribution. 
+   - "fair" distribution.
+ - Core: based on coalitional threats - each coalition must get at least what it can generate alone; 
+   - "stable" distribution. 
+
+---
 
 **The Shapley Value** allocates the value of a group according to marginal contribution calculations.
 
@@ -403,7 +425,7 @@ that satisfies the 3 axioms
 
 ---
 
-**The core** - the set of payoff vectors under which no coalition has a value greater than the sum of its members' 
+**The Core** - the set of payoff vectors under which no coalition has a value greater than the sum of its members' 
 payoffs. Therefore, no coalition has incentive to leave the grand coalition and receive a larger payoff.
  - It's **analogous to Nash equilibrium**, except that it allows deviations by groups of agents.
  
@@ -432,6 +454,8 @@ Every convex game has a nonempty core.
 
 In every convex game, the Shapley value is in the core.
                
+
+---
 
 ## Useful Links
 
