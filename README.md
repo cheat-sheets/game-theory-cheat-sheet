@@ -267,15 +267,15 @@ Nash equilibrium for different types of game:
 | **Complete**        | Nash                   | Subgame Perfect Nash    |
 | **Incomplete**      | Bayesian Nash          | Perfect Bayesian Nash   |
 
+#### Nash's Theorem
+
+Every finite, non-cooperative game of two or more players has a mixed strategy Nash equilibrium. (John Nash, 1950)
+
 ---
  
 **Pareto-optimal Outcome** - an outcome, such that there is no other outcome that Pareto-dominates it. An outcome `o` 
 Pareto-dominates outcome `o'` if it's at least as good for every player as outcome `o'`, and there is some player
 who strictly prefers `o` to `o'`.  
-
-#### Nash's Theorem
-
-Every finite, non-cooperative game of two or more players has a mixed strategy Nash equilibrium. (John Nash, 1950)
 
 #### The Oddness Theorem
 
