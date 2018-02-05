@@ -44,7 +44,7 @@ biology.
 - Includes timing of moves. 
 - Usually represented by a tree.
 
-![Extensive form](./assets/defining-games/extensive-form2.svg)
+![Extensive form](./assets/defining-games/extensive-form.svg)
 
 **Positive affine transformation**: au + b, where a > 0
 and b is any real number. Expected utilities are identical to positive affine transformations. 
@@ -211,7 +211,7 @@ and b is any real number. Expected utilities are identical to positive affine tr
   
 #### [Centipede Game](https://en.wikipedia.org/wiki/Centipede_game)
 
-![Centipede Game](./assets/commonly-known-games/centipede-game.png)
+![Centipede Game](./assets/commonly-known-games/centipede-game.svg)
 
 - SPE: each player chooses to defect at every opportunity.
   
