@@ -15,6 +15,7 @@ biology.
 - [Repeated Games](#repeated-games)
 - [Bayesian Games](#bayesian-games)
 - [Coalitional Games](#coalitional-games)
+- [Social Choice](#social-choice)
 - [Useful Links](#useful-links)
 
 ---
@@ -453,7 +454,42 @@ that is, "the incentives for joining a coalition increase as the coalition grows
 Every convex game has a nonempty core.
 
 In every convex game, the Shapley value is in the core.
-               
+
+
+## Social Choice
+
+**Social Choice Function** - a function that, given the set of linear orderings on the outcomes, tells which 
+outcome should be chosen.
+
+**Social Welfare Function** - a function that, given the set of linear orders on the outcomes, tells which 
+linear ordering should be chosen.
+
+**Voting Schemes**:
+ - Plurality - pick the outcome which is most preferred by the most people
+ - Cumulative voting - 
+   - distribute e.g., 5 votes each
+   - possible to vote for the same outcome multiple times
+ - Approval voting - vote for as many outcomes as you "like" (used e.g. in electing new members into a club or society)
+ - Plurality with elimination ("instant runoff", "transferable voting")
+   - if some outcome has a majority, it is the winner
+   - otherwise, the outcome with the fewest votes is eliminated (may need some tie-breaking procedure)
+   - repeat until there is a winner.
+ - Borda Rule, Borda Count
+   - assign each outcome a number.
+   - the most preferred outcome gets a score of `n - 1`, the next most preferred gets `n - 2`, down to the `n`th 
+   outcome which gets 0.
+   - sum scores for each outcome, and choose one with highest score.
+ - Successive elimintaion
+   - in advance, decide an ordering of alternatives
+   - everyone votes for the first or second, and the loser is eliminated.
+   
+**Condorcet winner** - an outcome that is preferred to every other outcome in pairwise majority-rule comparison. 
+It doesn't exist when there is a **Condorcet cycle** i.e. a situation when A defeats B, B defeats C and C defeats A.
+
+**Condorcet consistency** - if there is a Condorcet winner it must be selected by the social choice function.
+
+
+    
 
 ---
 
