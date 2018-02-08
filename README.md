@@ -5,7 +5,7 @@ decision-makers.
 Game theory is mainly used in economics, political science, and psychology, as well as logic, computer science and 
 biology.
 
-## Table of Content
+### Table of Content
 
 - [Game Representations](#game-representations)
 - [Classification of Games](#classification-of-games)
@@ -21,7 +21,7 @@ biology.
 
 ---
 
-## Game Representations
+### Game Representations
 
 **Players**: who are the decision makers?
 - People? Governments? Companies? Somebody employed by a Company?...
@@ -57,7 +57,7 @@ and b is any real number. Expected utilities are identical to positive affine tr
 
 ---
 
-## Classification of Games
+### Classification of Games
 
 <table style="table-layout:fixed">
   <colgroup>
@@ -128,7 +128,7 @@ and b is any real number. Expected utilities are identical to positive affine tr
 
 ---
 
-## [Commonly Known Games](https://en.wikipedia.org/wiki/List_of_games_in_game_theory)
+### [Commonly Known Games](https://en.wikipedia.org/wiki/List_of_games_in_game_theory)
 
 #### [Prisoner's Dilemma](https://en.wikipedia.org/wiki/Prisoner%27s_dilemma)
 
@@ -227,7 +227,7 @@ and b is any real number. Expected utilities are identical to positive affine tr
  
 ---
   
-## Nash Equilibrium
+### Nash Equilibrium
 
 **Nash Equilibrium** - a set of strategies, one for each player, such that no player has incentive to change
 his strategy given what the other players are doing.
@@ -285,7 +285,7 @@ Almost all finite games have a finite number of solutions, and that number is al
 
 ---
 
-## Extensive-Form Games
+### Extensive-Form Games
 
 #### Perfect Information Extensive-form Games
 
@@ -317,7 +317,7 @@ no need to carry it out. While Nash equilibria may depend on non-credible threat
 
 ---
 
-## Repeated Games
+### Repeated Games
 
 **Repeated Game** - an extensive form game that consists of a number of repetitions of some base game, called 
 a stage game. The stage game is usually one of the well-studied 2-person games.
@@ -369,7 +369,7 @@ Implications of the folk theorem:
 
 ---
 
-## Bayesian Games
+### Bayesian Games
 
 **Bayesian Game** (Incomplete Information Game) - a game in which players have incomplete information on the other
 players' strategies and payoffs, but, they have beliefs with known probabilities. It can be modeled as a normal form
@@ -397,7 +397,7 @@ equilibria in an incomplete information game that converges to the complete info
 
 ---
 
-## Coalitional Games
+### Coalitional Games
 
 **Coalitional Game** is given by specifying a value for every coalition. 
 Formally, the coalitional game consists of a finite set of players N, called the **grand coalition**, 
@@ -460,13 +460,14 @@ Every convex game has a nonempty core.
 
 In every convex game, the Shapley value is in the core.
 
+---
 
-## Social Choice
+### Social Choice
 
-**Social Choice Function** - a function that, given the set of linear orderings on the outcomes, tells which 
+**Social Choice Function** - a function that, given a set of linear orderings on the outcomes, tells which 
 outcome should be chosen.
 
-**Social Welfare Function** - a function that, given the set of linear orderings on the outcomes, tells which
+**Social Welfare Function** - a function that, given a set of linear orderings on the outcomes, tells which
  ordering should be chosen.
 
 **Voting Schemes**:
@@ -525,6 +526,6 @@ With median voting a condorcet winner always exists with an odd number of voters
 
 ---
 
-## Useful Links
+### Useful Links
 
 - Game Solver (2x2 matrix games): http://mindyourdecisions.com/GameSolver.html
