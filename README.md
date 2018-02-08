@@ -16,6 +16,7 @@ biology.
 - [Bayesian Games](#bayesian-games)
 - [Coalitional Games](#coalitional-games)
 - [Social Choice](#social-choice)
+- [Mechanism Design](#mechanism-design)
 - [Useful Links](#useful-links)
 
 ---
@@ -370,16 +371,20 @@ Implications of the folk theorem:
 
 ## Bayesian Games
 
-**Bayesian Game** (Incomplete Information Game) - a set of games that differ only in their payoffs, a common prior defined over them, and a 
-partition structure over the games for each agent.
+**Bayesian Game** (Incomplete Information Game) - a game in which players have incomplete information on the other
+players' strategies and payoffs, but, they have beliefs with known probabilities. It can be modeled as a normal form
+game with the difference that each player has multiple types with known probabilities (called a common prior beliefs).
 
-**Bayesian Nash Equilibrium** - a set of strategies, one for each type of player, such that no type has incentive to change his or her strategy given the beliefs about the types and what the  other types are doing.
+**Bayesian Nash Equilibrium** - a set of strategies, one for each type of player, such that no type has incentive 
+to change his or her strategy given the beliefs about the types and what the  other types are doing.
 
 ---
 
-**Ex Ante Dominated Strategy** - a strategy for a player such that an alternative strategy for that player provides a greater payoff for that player regardless of all other players' strategies
+**Ex Ante Dominated Strategy** - a strategy for a player such that an alternative strategy for that player provides a 
+greater payoff for that player regardless of all other players' strategies
 
-**Interim Dominated Strategy** - a strategy for a type such that an alternative strategy for that type provides a greater payoff for that type regardless of all other players' strategies
+**Interim Dominated Strategy** - a strategy for a type such that an alternative strategy for that type provides a 
+greater payoff for that type regardless of all other players' strategies
 
 Interim dominated strategy implies ex ante dominated strategies. The reverse is not always true.
 
@@ -461,25 +466,25 @@ In every convex game, the Shapley value is in the core.
 **Social Choice Function** - a function that, given the set of linear orderings on the outcomes, tells which 
 outcome should be chosen.
 
-**Social Welfare Function** - a function that, given the set of linear orders on the outcomes, tells which 
-linear ordering should be chosen.
+**Social Welfare Function** - a function that, given the set of linear orderings on the outcomes, tells which
+ ordering should be chosen.
 
 **Voting Schemes**:
- - Plurality - pick the outcome which is most preferred by the most people
- - Cumulative voting - 
+ - **Plurality** - pick the outcome which is most preferred by the most people
+ - **Cumulative voting** 
    - distribute e.g., 5 votes each
    - possible to vote for the same outcome multiple times
- - Approval voting - vote for as many outcomes as you "like" (used e.g. in electing new members into a club or society)
- - Plurality with elimination ("instant runoff", "transferable voting")
+ - **Approval voting** - vote for as many outcomes as you "like" (used e.g. in electing new members into a club or society)
+ - **Plurality with elimination** ("instant runoff", "transferable voting")
    - if some outcome has a majority, it is the winner
    - otherwise, the outcome with the fewest votes is eliminated (may need some tie-breaking procedure)
    - repeat until there is a winner.
- - Borda Rule, Borda Count
+ - **Borda Rule**, **Borda Count**
    - assign each outcome a number.
    - the most preferred outcome gets a score of `n - 1`, the next most preferred gets `n - 2`, down to the `n`th 
    outcome which gets 0.
    - sum scores for each outcome, and choose one with highest score.
- - Successive elimintaion
+ - **Successive elimination**
    - in advance, decide an ordering of alternatives
    - everyone votes for the first or second, and the loser is eliminated.
    
@@ -488,8 +493,35 @@ It doesn't exist when there is a **Condorcet cycle** i.e. a situation when A def
 
 **Condorcet consistency** - if there is a Condorcet winner it must be selected by the social choice function.
 
+---
 
+#### Arrow's Impossibility Theorem
+
+Any social welfare function over 3 or more outcomes that is Pareto efficient and independent of irrelevant alternatives
+is dictatorial. (Kenneth Arrow, 1951)
     
+Social welfare function is **Pareto efficient** if whenever all agents agree on the ordering of two outcomes, the social
+welfare function selects that ordering.
+
+Social welfare function is **independent of irrelevant alternatives** if the selected ordering between two outcomes
+depends only on the relative orderings they are given by the agents.
+
+Social welfare function is **dictatorial** if there exists a single agent whose preferences always determine the social
+ordering.
+
+---
+
+In advance, decide an ordering of outcomes (e.g. according to left-right political spectrum for political parties)
+
+A group of agents is said to have **single-peaked preferences** if:
+- Each agent has an ideal outcome in the set; and
+- For each agent, outcomes that are further from his ideal outcome are preferred less. 
+
+**Median voting** - the median of the most preferred outcomes is selected.
+
+#### Theorem
+
+With median voting a condorcet winner always exists with an odd number of voters.
 
 ---
 
