@@ -335,13 +335,17 @@ continuation. A higher discount factor means more patience and higher chance of 
 is a subgame perfect equilibrium iff no player can profitably deviate from his strategy at a single stage and maintain 
 his strategy everywhere else.
 
-**Grim Trigger** - play some set of strategies with higher payoff than NE, if anyone deviates then play NE forever.
+**Grim Trigger** 
+  - Play some strategy profile with higher payoff than NE
+  - If anyone deviates then play NE forever.
+  
+The strategy profile where everyone plays grim trigger is a subgame perfect equilibrium.
 
 **Tit-for-Tat** - a strategy in the infinitely repeated prisoner's dilemma:
   - Begin by cooperating
   - For all future periods, copy opponent's strategy from the previous period.
 
-Both players playing tit-for-tat is not subgame perfect.
+The strategy profile where everyone plays tit-for-tat is not a subgame perfect equilibrium.
 
 #### The Folk theorem 
   - Take a Nash equilibrium from the stage game
@@ -362,7 +366,7 @@ Implications of the folk theorem:
 - the game played at any iteration depends on the previous game played and on the actions taken by all agents in 
 that game.
     
---
+---
 
 #### Learning in Repeated Games:
 **Fictitious Play**: each player maintains explicit belief about the other players.
