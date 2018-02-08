@@ -139,8 +139,8 @@ and b is any real number. Expected utilities are identical to positive affine tr
 
 - There is 1 NE:
   - Both players betray. 
-- This is a dominant strategies NE. 
-- It is also the only non Pareto optimal outcome in this game.
+- This is a [dominant strategies NE](#nash-equilibrium). 
+- It is also the only non [Pareto optimal outcome](#pareto-optimality) in this game.
 
 #### [Coordination Games](https://en.wikipedia.org/wiki/Coordination_game)
 
@@ -202,7 +202,7 @@ and b is any real number. Expected utilities are identical to positive affine tr
 | **Play heads**       | **1,1**             | 0,0                |
 | **Play tails**       | 0,0                 | **0,0**            |
  
-- There are 2 NE (a rare case when there is an even number of NE):
+- There are 2 NE (a rare case when there is an even number of NE, see [The Oddness Theorem](#the-oddness-theorem)):
   - Both players play heads
   - Both players play tails
   
@@ -249,8 +249,8 @@ actions.
   - Strictly Dominant Strategy - same as Dominant Strategy
   - Weakly Dominant Strategy - a strategy that is always better than or equal to any other strategy, for any profile of other players' actions.  
 
-**Dominant Strategy Nash Equilibrium** - a Nash equilibrium in which all strategies are dominant. Can be found by
-elimination of strictly dominated strategies.
+**Dominant Strategy Nash Equilibrium** - a Nash equilibrium in which all strategies are dominant. If it exists can be 
+found by elimination of strictly dominated strategies.
 
 **Dominated Strategy** - a strategy, such that, regardless of what any other players do, the strategy earns a player 
 a smaller payoff than some other strategy. 
@@ -262,7 +262,9 @@ a smaller payoff than some other strategy.
 
 [Bayesian Nash Equilibrium](#bayesian-games)
 
-Nash equilibrium for different types of game:
+[The Core](#coalitional-games) (analogous to Nash equilibrium for coalitional games)
+
+Nash equilibrium for different types of games:
  
 |                     | **Simultaneous**       | **Sequential**          |
 | ---                 | ---                    | ---                     |
@@ -274,10 +276,14 @@ Nash equilibrium for different types of game:
 Every finite, non-cooperative game of two or more players has a mixed strategy Nash equilibrium. (John Nash, 1950)
 
 ---
+
+#### Pareto Optimality
  
 **Pareto-optimal Outcome** - an outcome, such that there is no other outcome that Pareto-dominates it. An outcome `o` 
 Pareto-dominates outcome `o'` if it's at least as good for every player as outcome `o'`, and there is some player
 who strictly prefers `o` to `o'`.  
+
+---
 
 #### The Oddness Theorem
 
@@ -490,7 +496,7 @@ outcome should be chosen.
    - everyone votes for the first or second, and the loser is eliminated.
    
 **Condorcet winner** - an outcome that is preferred to every other outcome in pairwise majority-rule comparison. 
-It doesn't exist when there is a **Condorcet cycle** i.e. a situation when A defeats B, B defeats C and C defeats A.
+It doesn't exist when there is a **Condorcet cycle** e.g. a situation when A defeats B, B defeats C and C defeats A.
 
 **Condorcet consistency** - if there is a Condorcet winner it must be selected by the social choice function.
 
