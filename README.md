@@ -343,15 +343,6 @@ his strategy everywhere else.
 
 Both players playing tit-for-tat is not subgame perfect.
 
---- 
-  
-**Stochastic Game** - a generalization of repeated games.
-  - agents repeatedly play games from a set of normal-form games.
-  - the game played at any iteration depends on the previous game played and on the actions taken by all agents in 
-  that game.
-
----
-
 #### The Folk theorem 
   - Take a Nash equilibrium from the stage game
   - Consider any alternative set of strategies such that the expected utility for those strategies in the stage game is 
@@ -364,6 +355,15 @@ Implications of the folk theorem:
   everything
   - Predicting and explaining everything is essentially predicting and explaining nothing
   
+--- 
+    
+**Stochastic Game** - a generalization of repeated games.
+- agents repeatedly play games from a set of normal-form games.
+- the game played at any iteration depends on the previous game played and on the actions taken by all agents in 
+that game.
+    
+--
+
 #### Learning in Repeated Games:
 **Fictitious Play**: each player maintains explicit belief about the other players.
   - Initialize beliefs about the opponent's strategies.
@@ -386,13 +386,19 @@ to change his or her strategy given the beliefs about the types and what the  ot
 
 ---
 
-**Ex Ante Dominated Strategy** - a strategy for a player such that an alternative strategy for that player provides a 
+3 stages of a Bayesian game:
+ - **Ex-ante** - the player knows nothing about anyone's actual type.
+ - **Interim** - the player knows her own type but not the types of the other players.
+ - **Ex-post** - the player knows all players' types. Making choices at this stage for players is equivalent to making
+ choices in complete information game.
+
+**Ex-ante Dominated Strategy** - a strategy for a player such that an alternative strategy for that player provides a 
 greater payoff for that player regardless of all other players' strategies
 
 **Interim Dominated Strategy** - a strategy for a type such that an alternative strategy for that type provides a 
 greater payoff for that type regardless of all other players' strategies
 
-Interim dominated strategy implies ex ante dominated strategies. The reverse is not always true.
+Interim dominated strategy implies ex-ante dominated strategies. The reverse is not always true.
 
 ---
 
@@ -535,3 +541,8 @@ With median voting a condorcet winner always exists with an odd number of voters
 ### Useful Links
 
 - Game Solver (2x2 matrix games): http://mindyourdecisions.com/GameSolver.html
+- Game Theory 101: https://www.youtube.com/watch?v=NSVmOC_5zrE&list=PLKI1h_nAkaQoDzI4xDIXzx6U2ergFmedo
+- Game Theory: https://www.coursera.org/learn/game-theory-1
+- Game Theory II: Advanced Applications: https://www.coursera.org/learn/game-theory-2
+- An Introduction to Decision Theory by Martin Peterson: https://www.amazon.com/Introduction-Decision-Cambridge-Introductions-Philosophy/dp/0521716543
+- http://www.gametheory.net/
