@@ -413,6 +413,35 @@ equilibria in an incomplete information game that converges to the complete info
 
 ---
 
+Such games are called Bayesian because of the probabilistic analysis inherent in the game. Players have initial beliefs 
+about the type of each player (where a belief is a probability distribution over the possible types for a player) and 
+can update their beliefs according to Bayes' rule as play takes place in the game, i.e. the belief a player holds about 
+another player's type might change on the basis of the actions they have played.
+
+**Bayes' Theorem**
+
+P(A|B) = P(B|A) * P (A) / P(B), where
+
+- P(A|B) is a conditional probability: the likelihood of event A occurring given that B is true.
+- P(B|A) is also a conditional probability: the likelihood of event B occurring given that A is true.
+- P(A) and P(B) are the probabilities of observing A and B independently of each other;
+this is known as the marginal probability.
+
+**Bayes' Rule**
+
+Bayes’ theorem in odds form is:
+
+O(A1:A2|B) = O(A1:A2) * Λ(A1:A2|B), where
+
+Λ(A1:A2|B) = P(B|A1) / P(B|A2) - Bayes factor or likelihood ratio, and      
+
+O(A1:A2) = P(A1) / P(A2) - odds between to events.
+
+So the rule says that **the posterior odds are the prior odds times the Bayes factor**, 
+or in other words, posterior is proportional to prior times likelihood.
+
+---
+
 ### Coalitional Games
 
 **Coalitional Game** is given by specifying a value for every coalition. 
@@ -526,6 +555,11 @@ depends only on the relative orderings they are given by the agents.
 Social welfare function is **dictatorial** if there exists a single agent whose preferences always determine the social
 ordering.
 
+#### Muller-Satterthwaite Impossibility Theorem
+
+Any social choice function that is weakly Pareto efficient and monotonic is dictatorial. (definitions are similar
+to the corresponding social welfare function)
+
 ---
 
 In advance, decide an ordering of outcomes (e.g. according to left-right political spectrum for political parties)
@@ -538,7 +572,7 @@ A group of agents is said to have **single-peaked preferences** if:
 
 #### Theorem
 
-With median voting a condorcet winner always exists with an odd number of voters.
+With median voting a condorcet winner always exists if there is an odd number of voters.
 
 ---
 
