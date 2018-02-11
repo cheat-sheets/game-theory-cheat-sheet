@@ -576,6 +576,23 @@ With median voting a condorcet winner always exists if there is an odd number of
 
 ---
 
+### Mechanism Design
+
+**Mechanism Design** (also called Inverse Game Theory) - a field in game theory that focuses on designing the game
+structure e.g. choosing the actions available to players and mappings of action profiles to outcomes, so as to optimise
+for certain qualities e.g. incentive compatibility, Pareto efficiency, individual rationality etc.
+
+**Game Setting** - components of the game that we, as game designers don't get to control, 
+e.g. a set of agents, a set of outcomes, common priors etc.
+
+**Mechanism** - components of the game, which, when added to a corresponding game setting, turn it into a game. 
+An example is a set of available actions for agents and mapping of action profiles to outcomes.
+
+**Bayesian Game Setting** - 
+
+
+---
+
 ### Useful Links
 
 - Game Solver (2x2 matrix games): http://mindyourdecisions.com/GameSolver.html
