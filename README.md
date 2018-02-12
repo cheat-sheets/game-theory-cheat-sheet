@@ -247,10 +247,11 @@ incentive to change his strategy given what the other players are doing.
 **Dominant Strategy** - a strategy that is always better than any other strategy, for any profile of other players' 
 actions.
   - Strictly Dominant Strategy - same as Dominant Strategy
-  - Weakly Dominant Strategy - a strategy that is always better than or equal to any other strategy, for any profile of other players' actions.  
+  - Weakly Dominant Strategy - a strategy that is always better than or equal to any other strategy, for any profile of 
+  other players' actions.  
 
-**Dominant Strategy Nash Equilibrium** - a Nash equilibrium in which all strategies are dominant. If it exists can be 
-found by elimination of strictly dominated strategies.
+**Dominant Strategy Nash Equilibrium** (equilibrium in dominant strategies) - a Nash equilibrium in which all strategies 
+are strictly dominant. If it exists can be found by elimination of strictly dominated strategies.
 
 **Dominated Strategy** - a strategy, such that, regardless of what any other players do, the strategy earns a player 
 a smaller payoff than some other strategy. 
@@ -587,8 +588,46 @@ e.g. a set of agents, a set of outcomes, common priors etc.
 
 **Mechanism** - components of the game, which, when added to a corresponding game setting, turn it into a game. 
 An example is a set of available actions for agents and mapping of action profiles to outcomes.
+- [Mechanisms for a Bayesian Game Setting](#mechanisms-for-a-bayesian-game-setting)
+- [Transferable Utility Mechanisms](#transferable-utility-mechanisms)
 
-**Bayesian Game Setting** - 
+---
+
+#### Mechanisms for a Bayesian Game Setting
+
+**Bayesian Game Setting** - a tuple (N, O, Θ, p, u):
+- N - a finite set of n agents
+- O - a set of outcomes
+- Θ - Θ1 ✕ ... ✕ Θn - a set of possible joint type vectors
+- p - a probability distribution on Θ (common prior)
+- u = (u1,...,un), where ui: O ✕ Θ ⇒ ℝ - utility function for each player i.
+
+**Mechanism for a Bayesian Game Setting** - is a mechanism where the designer gets to specify the action sets for the
+agents and the mapping to outcomes, over which agents have utility. Thus it is a pair (A, M), where
+- A = A1 ✕ ... ✕ An, where Ai - the set of actions available to agent i ∊ N
+- M: A ⇒ Π(O) maps each action profile to a distribution over outcomes.
+
+Given a Bayesian game setting (N, O, Θ, p, u), a mechanism (A, M) is an **implementation in dominant strategies** of
+a social choice function C (over N and O) if for any vector of utility functions u, the game has an [equilibrium
+in weakly-dominant strategies](#nash-equilibrium), and in any such equilibrium a we have M(a) = C(u)
+
+Given a Bayesian game setting (N, O, Θ, p, u), a mechanism (A, M) is an **implementation in Bayes-Nash equilibrium** of
+a social choice function C (over N and O) if there exists a [Bayes-Nash equilibrium](#nash-equilibrium) of the 
+Bayesian game (N, A, Θ, p, u), such that for every type profile θ ∊ Θ and every action profile a ∊ A that can arise
+given type profile θ in this equilibrium, we have M(a) = C(u(.θ))
+
+---
+
+#### Mechanism Qualities
+
+**Direct Mechanism** - a mechanism where the set of join actions is equal to the set of joint types, i.e.
+the agents have to declare their types to the mechanism.
+
+**Strategyproof** (aka **Truthful** or **dominant-strategy-incentive-compatible (DSIC)**) **Mechanism** - a direct 
+mechanism where declaring true type for every agent is a weakly-dominant Nash equilibrium. In other words, every agent 
+fare best or at least not worse by being truthful, regardless of what the others do.
+
+#### Revelation Principle
 
 
 ---
