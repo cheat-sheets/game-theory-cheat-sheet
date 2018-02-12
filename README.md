@@ -261,7 +261,7 @@ a smaller payoff than some other strategy.
  
 [Subgame Perfect Equilibrium](#extensive-form-games)
 
-[Bayesian Nash Equilibrium](#bayesian-games)
+[Bayes-Nash Equilibrium](#bayesian-games)
 
 [The Core](#coalitional-games) (analogous to Nash equilibrium for coalitional games)
 
@@ -386,8 +386,8 @@ that game.
 players' strategies and payoffs, but, they have beliefs with known probabilities. It can be modeled as a normal form
 game with the difference that each player has multiple types with known probabilities (called a common prior beliefs).
 
-**Bayesian Nash Equilibrium** - a set of strategies, one for each type of player, such that no type has incentive 
-to change his or her strategy given the beliefs about the types and what the  other types are doing.
+**Bayes-Nash Equilibrium** (Bayesian Nash Equilibrium) - a set of strategies, one for each type of player, such that no 
+type has incentive to change his or her strategy given the beliefs about the types and what the  other types are doing.
 
 ---
 
@@ -588,12 +588,12 @@ e.g. a set of agents, a set of outcomes, common priors etc.
 
 **Mechanism** - components of the game, which, when added to a corresponding game setting, turn it into a game. 
 An example is a set of available actions for agents and mapping of action profiles to outcomes.
-- [Mechanisms for a Bayesian Game Setting](#mechanisms-for-a-bayesian-game-setting)
-- [Transferable Utility Mechanisms](#transferable-utility-mechanisms)
+- [Mechanism for a Bayesian Game Setting](#mechanism-for-a-bayesian-game-setting)
+- [Transferable Utility Mechanism](#transferable-utility-mechanism)
 
 ---
 
-#### Mechanisms for a Bayesian Game Setting
+#### Mechanism for a Bayesian Game Setting
 
 **Bayesian Game Setting** - a tuple (N, O, Θ, p, u):
 - N - a finite set of n agents
@@ -614,7 +614,7 @@ in weakly-dominant strategies](#nash-equilibrium), and in any such equilibrium a
 Given a Bayesian game setting (N, O, Θ, p, u), a mechanism (A, M) is an **implementation in Bayes-Nash equilibrium** of
 a social choice function C (over N and O) if there exists a [Bayes-Nash equilibrium](#nash-equilibrium) of the 
 Bayesian game (N, A, Θ, p, u), such that for every type profile θ ∊ Θ and every action profile a ∊ A that can arise
-given type profile θ in this equilibrium, we have M(a) = C(u(.θ))
+given type profile θ in this equilibrium, we have M(a) = C(u(.,θ))
 
 ---
 
