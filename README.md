@@ -623,12 +623,62 @@ given type profile θ in this equilibrium, we have M(a) = C(u(.,θ))
 **Direct Mechanism** - a mechanism where the set of join actions is equal to the set of joint types, i.e.
 the agents have to declare their types to the mechanism.
 
-**Strategyproof** (aka **Truthful** or **dominant-strategy-incentive-compatible (DSIC)**) **Mechanism** - a direct 
-mechanism where declaring true type for every agent is a weakly-dominant Nash equilibrium. In other words, every agent 
-fare best or at least not worse by being truthful, regardless of what the others do.
+**Incentive Compatible** (aka **Truthful** or **Strategyproof**) **Mechanism** - a direct 
+mechanism where declaring true type for every agent is a weakly-dominant strategy Nash equilibrium. In other words, every 
+agent fare best or at least not worse by being truthful, regardless of what the others do.
+- Dominant Strategy Incentive Compatible (DSIC) - same as Incentive Compatible
+- Bayesian-Nash Incentive Compatible (BNIC) - a direct mechanism where declaring true type for every agent is a 
+Bayes-Nash equilibrium. In other words, every agent fare best or at least not worse by being truthful, 
+if all the others act truthfully.
+
+A transferable utility mechanism is **strictly Pareto efficient**, or just **efficient**, if in equilibrium it selects
+the choice that maximizes the sum of agents' utilities, disregarding monetary payments.
+
+A transferable utility mechanism is **budget balanced** when, regardless of the agents' types, in equilibrium the 
+mechanism collects and disburses the same amount of money from and to the agents.
+
+A transferable utility mechanism is **individual rational** when, in equilibrium no agent loses by 
+participating in the mechanism, i.e. the valuation subtracting the payment for every agent is not negative.
+- ex interum individual rational - holds for every possible valuation of the individual, but averages over the possible 
+valuations of the other agents
+- ex post - holds for every possible valuation of the individual and over the possible 
+valuations of the other agents
+
+A mechanism is **tractable** when for every possible valuation profile the mechanism mapping function can be
+computed in polynomial time.
+
+A mechanism X is **revenue maximizing** when among the set of other mechanisms that satisfy the other constraints, 
+the mechanism X maximizes the total payments made by agents in equilibrium.
+- revenue minimizing is defined analogously
+
+A mechanism is **maxmin fair** if it "makes the least-happy agent the happiest".
+
+---   
 
 #### Revelation Principle
 
+Any social choice function that can be implemented by any mechanism can be implemented by a truthful, direct mechanism.
+
+In mechanism design, the revelation principle is of utmost importance in finding solutions. The researcher need only 
+look at the set of equilibrium characterized by truthfulness. That is, if the mechanism designer wants to 
+implement some outcome or property, he can restrict his search to mechanisms in which agents are willing to reveal 
+their private information to the mechanism designer that has that outcome or property. If no such direct and truthful 
+mechanism exists, no mechanism can implement this outcome/property. By narrowing the area needed to be searched, the 
+problem of finding a mechanism becomes much easier.
+
+#### Impossibility of General Dominant-Strategy Implementation (Gibbard-Satterthwaite Theorem)
+
+For every social choice function, one of the following three things must hold:
+
+- The social choice function output is limited to 2 alternatives only
+- The social choice function is dictatorial, i.e. there exists a distinguished agent who can choose the winning outcome
+- Truthful reporting of preferences is a dominant strategy for every agent.
+
+Special cases
+
+Single-peaked domains: median voting is strategy proof, or take max, min or any other statistic
+
+Trade - have a private value for buying (or selling) an indivisible good. A price is fixed in advance, declare whether willing to buy or sell at that price.
 
 ---
 
