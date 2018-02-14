@@ -618,7 +618,7 @@ given type profile θ in this equilibrium, we have M(a) = C(u(.,θ))
 
 ---
 
-#### Mechanism for a Bayesian Game Setting
+#### Transferable Utility Mechanism
 
 Agents have **quasilinear preferences with transferable utility** in an n-player Bayesian game when the set of outcomes
 is: 
@@ -631,7 +631,25 @@ u<sub>i</sub>(o,θ) = u<sub>i</sub>(x,θ) - p<sub>i</sub>,
 
 where o = (x,p) is an element of O, and u<sub>i</sub>: X ✕ Θ ⇒ ℝ.
 
+The corresponding game setting is called **Quasilinear Setting**.
 
+A **direct mechanism in a quasilinear setting** (N, O = X ✕ ℝ<sup>n</sup>, Θ, p, u) is a pair (χ, ρ) specifying a
+basic outcome χ(θ) and a profile of payments ρ(θ) = (p1(θ),...,pn(θ)).
+- χ defines the "nonmonetary" outcome
+- ρi defines the "monetary" payment (possible negative) that an agent i makes to the mechanism
+
+---
+
+#### Private Values
+
+Preferences have **private values**, or satisfy conditional utility independence, if each agent i's utility function
+does not depend on the other agents' types, i.e it can be written as ui(o,θi).
+
+An agent's type becomes their **valuation function**: i's value for choice x ∊ X is vi(x) = ui(x, θi). 
+- vi is the maximum amount i would be willing to pay to get x
+
+Alternative definition of a **direct mechanism with private values**:
+- ask agents to declare valuation functions vi: X ⇒ ℝ
 
 ---
 
@@ -640,7 +658,7 @@ where o = (x,p) is an element of O, and u<sub>i</sub>: X ✕ Θ ⇒ ℝ.
 **Direct Mechanism** - a mechanism where the set of join actions is equal to the set of joint types, i.e.
 the agents have to declare their types to the mechanism.
 
-**Incentive Compatible** (aka **Truthful** or **Strategyproof**) **Mechanism** - a direct 
+**Incentive Compatible** (aka **Truthful** or **Strategy proof**) **Mechanism** - a direct 
 mechanism where declaring true type for every agent is a weakly-dominant strategy Nash equilibrium. In other words, every 
 agent fare best or at least not worse by being truthful, regardless of what the others do.
 - Dominant Strategy Incentive Compatible (DSIC) - same as Incentive Compatible
@@ -691,11 +709,14 @@ For every social choice function, one of the following three things must hold:
 - The social choice function is dictatorial, i.e. there exists a distinguished agent who can choose the winning outcome
 - Truthful reporting of preferences is a dominant strategy for every agent.
 
-Special cases
+---
 
-Single-peaked domains: median voting is strategy proof, or take max, min or any other statistic
+Median voting in single-peaked domains is strategy proof (any other statistics can be used instead of median 
+e.g. max or min)
 
-Trade - have a private value for buying (or selling) an indivisible good. A price is fixed in advance, declare whether willing to buy or sell at that price.
+Trade is strategy proof: 
+- An agent have a private value for buying (or selling) an indivisible good. He declares this value truthfully. 
+- Other agents declare whether they are willing to buy or sell at that price.
 
 ---
 
