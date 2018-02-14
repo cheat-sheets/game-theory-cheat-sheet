@@ -598,13 +598,13 @@ An example is a set of available actions for agents and mapping of action profil
 **Bayesian Game Setting** - a tuple (N, O, Θ, p, u):
 - N - a finite set of n agents
 - O - a set of outcomes
-- Θ - Θ<sub>1</sub> ✕ ... ✕ Θ<sub>n</sub> - a set of possible joint type vectors
+- Θ - Θ<sub>1</sub> × ... × Θ<sub>n</sub> - a set of possible joint type vectors
 - p - a probability distribution on Θ (common prior)
-- u = (u<sub>1</sub>,...,u<sub>n</sub>), where u<sub>i</sub>: O ✕ Θ ⇒ ℝ - utility function for each player i.
+- u = (u<sub>1</sub>,...,u<sub>n</sub>), where u<sub>i</sub>: O × Θ ⇒ ℝ - utility function for each player i.
 
 **Mechanism for a Bayesian Game Setting** - is a mechanism where the designer gets to specify the action sets for the
 agents and the mapping to outcomes, over which agents have utility. Thus it is a pair (A, M), where
-- A = A<sub>1</sub> ✕ ... ✕ A<sub>n</sub>, where Ai - the set of actions available to agent i ∊ N
+- A = A<sub>1</sub> × ... × A<sub>n</sub>, where Ai - the set of actions available to agent i ∊ N
 - M: A ⇒ Π(O) maps each action profile to a distribution over outcomes.
 
 Given a Bayesian game setting (N, O, Θ, p, u), a mechanism (A, M) is an **implementation in dominant strategies** of
@@ -623,17 +623,17 @@ given type profile θ in this equilibrium, we have M(a) = C(u(.,θ))
 Agents have **quasilinear preferences with transferable utility** in an n-player Bayesian game when the set of outcomes
 is: 
 
-O = X ✕ ℝ<sup>n</sup>
+O = X × ℝ<sup>n</sup>
 
 for a set X, if the utility of an agent i given joint type θ can be written:
 
 u<sub>i</sub>(o,θ) = u<sub>i</sub>(x,θ) - p<sub>i</sub>,
 
-where o = (x,p) is an element of O, and u<sub>i</sub>: X ✕ Θ ⇒ ℝ.
+where o = (x,p) is an element of O, and u<sub>i</sub>: X × Θ ⇒ ℝ.
 
 The corresponding game setting is called **Quasilinear Setting**.
 
-A **direct mechanism in a quasilinear setting** (N, O = X ✕ ℝ<sup>n</sup>, Θ, p, u) is a pair (χ, ρ) specifying a
+A **direct mechanism in a quasilinear setting** (N, O = X × ℝ<sup>n</sup>, Θ, p, u) is a pair (χ, ρ) specifying a
 basic outcome χ(θ) and a profile of payments ρ(θ) = (p<sub>1</sub>(θ),...,p<sub>n</sub>(θ)).
 - χ defines the "nonmonetary" outcome
 - ρ<sub>i</sub> defines the "monetary" payment (possible negative) that an agent i makes to the mechanism
