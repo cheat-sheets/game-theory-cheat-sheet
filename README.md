@@ -658,7 +658,7 @@ Alternative definition of a **direct mechanism with private values**:
 **Direct Mechanism** - a mechanism where the set of join actions is equal to the set of joint types, i.e.
 the agents have to declare their types to the mechanism.
 
-**Incentive Compatible** (aka **Truthful** or **Strategy proof**) **Mechanism** - a direct 
+**Incentive Compatible** (aka **Truthful** or **Strategy-proof**) **Mechanism** - a direct 
 mechanism where declaring true type for every agent is a weakly-dominant strategy Nash equilibrium. In other words, every 
 agent fare best or at least not worse by being truthful, regardless of what the others do.
 - Dominant Strategy Incentive Compatible (DSIC) - same as Incentive Compatible
@@ -711,10 +711,10 @@ For every social choice function, one of the following three things must hold:
 
 ---
 
-Median voting in single-peaked domains is strategy proof (any other statistics can be used instead of median 
+Median voting in single-peaked domains is strategy-proof (any other statistics can be used instead of median 
 e.g. max or min)
 
-Trade is strategy proof: 
+Trade is strategy-proof: 
 - An agent have a private value for buying (or selling) an indivisible good. He declares this value truthfully. 
 - Other agents declare whether they are willing to buy or sell at that price.
 
