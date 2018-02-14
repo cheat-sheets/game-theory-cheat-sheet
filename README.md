@@ -559,7 +559,7 @@ ordering.
 #### Muller-Satterthwaite Impossibility Theorem
 
 Any social choice function that is weakly Pareto efficient and monotonic is dictatorial. (definitions are similar
-to the corresponding social welfare function)
+to the corresponding terms for social welfare function)
 
 ---
 
@@ -581,7 +581,7 @@ With median voting a condorcet winner always exists if there is an odd number of
 
 **Mechanism Design** (also called Inverse Game Theory) - a field in game theory that focuses on designing the game
 structure e.g. choosing the actions available to players and mappings of action profiles to outcomes, so as to optimise
-for certain qualities e.g. incentive compatibility, Pareto efficiency, individual rationality etc.
+for certain [qualities](#mechanism-qualities) e.g. incentive compatibility, Pareto efficiency, individual rationality etc.
 
 **Game Setting** - components of the game that we, as game designers don't get to control, 
 e.g. a set of agents, a set of outcomes, common priors etc.
@@ -615,6 +615,23 @@ Given a Bayesian game setting (N, O, Θ, p, u), a mechanism (A, M) is an **imple
 a social choice function C (over N and O) if there exists a [Bayes-Nash equilibrium](#nash-equilibrium) of the 
 Bayesian game (N, A, Θ, p, u), such that for every type profile θ ∊ Θ and every action profile a ∊ A that can arise
 given type profile θ in this equilibrium, we have M(a) = C(u(.,θ))
+
+---
+
+#### Mechanism for a Bayesian Game Setting
+
+Agents have **quasilinear preferences with transferable utility** in an n-player Bayesian game when the set of outcomes
+is: 
+
+O = X ✕ ℝ<sup>n</sup>
+
+for a set X, if the utility of an agent i given joint type θ can be written:
+
+u<sub>i</sub>(o,θ) = u<sub>i</sub>(x,θ) - p<sub>i</sub>,
+
+where o = (x,p) is an element of O, and u<sub>i</sub>: X ✕ Θ ⇒ ℝ.
+
+
 
 ---
 
