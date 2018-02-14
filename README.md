@@ -598,13 +598,13 @@ An example is a set of available actions for agents and mapping of action profil
 **Bayesian Game Setting** - a tuple (N, O, Θ, p, u):
 - N - a finite set of n agents
 - O - a set of outcomes
-- Θ - Θ1 ✕ ... ✕ Θn - a set of possible joint type vectors
+- Θ - Θ<sub>1</sub> ✕ ... ✕ Θ<sub>n</sub> - a set of possible joint type vectors
 - p - a probability distribution on Θ (common prior)
-- u = (u1,...,un), where ui: O ✕ Θ ⇒ ℝ - utility function for each player i.
+- u = (u<sub>1</sub>,...,u<sub>n</sub>), where u<sub>i</sub>: O ✕ Θ ⇒ ℝ - utility function for each player i.
 
 **Mechanism for a Bayesian Game Setting** - is a mechanism where the designer gets to specify the action sets for the
 agents and the mapping to outcomes, over which agents have utility. Thus it is a pair (A, M), where
-- A = A1 ✕ ... ✕ An, where Ai - the set of actions available to agent i ∊ N
+- A = A<sub>1</sub> ✕ ... ✕ A<sub>n</sub>, where Ai - the set of actions available to agent i ∊ N
 - M: A ⇒ Π(O) maps each action profile to a distribution over outcomes.
 
 Given a Bayesian game setting (N, O, Θ, p, u), a mechanism (A, M) is an **implementation in dominant strategies** of
@@ -634,22 +634,22 @@ where o = (x,p) is an element of O, and u<sub>i</sub>: X ✕ Θ ⇒ ℝ.
 The corresponding game setting is called **Quasilinear Setting**.
 
 A **direct mechanism in a quasilinear setting** (N, O = X ✕ ℝ<sup>n</sup>, Θ, p, u) is a pair (χ, ρ) specifying a
-basic outcome χ(θ) and a profile of payments ρ(θ) = (p1(θ),...,pn(θ)).
+basic outcome χ(θ) and a profile of payments ρ(θ) = (p<sub>1</sub>(θ),...,p<sub>n</sub>(θ)).
 - χ defines the "nonmonetary" outcome
-- ρi defines the "monetary" payment (possible negative) that an agent i makes to the mechanism
+- ρ<sub>i</sub> defines the "monetary" payment (possible negative) that an agent i makes to the mechanism
 
 ---
 
 #### Private Values
 
 Preferences have **private values**, or satisfy conditional utility independence, if each agent i's utility function
-does not depend on the other agents' types, i.e it can be written as ui(o,θi).
+does not depend on the other agents' types, i.e it can be written as u<sub>i</sub>(o,θ<sub>i</sub>).
 
-An agent's type becomes their **valuation function**: i's value for choice x ∊ X is vi(x) = ui(x, θi). 
-- vi is the maximum amount i would be willing to pay to get x
+An agent's type becomes their **valuation function**: i's value for choice x ∊ X is v<sub>i</sub>(x) = u<sub>i</sub>(x, θ<sub>i</sub>). 
+- v<sub>i</sub> is the maximum amount i would be willing to pay to get x
 
 Alternative definition of a **direct mechanism with private values**:
-- ask agents to declare valuation functions vi: X ⇒ ℝ
+- ask agents to declare valuation functions v<sub>i</sub>: X ⇒ ℝ
 
 ---
 
