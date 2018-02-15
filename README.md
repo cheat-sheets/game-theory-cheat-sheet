@@ -17,6 +17,7 @@ biology.
 - [Coalitional Games](#coalitional-games)
 - [Social Choice](#social-choice)
 - [Mechanism Design](#mechanism-design)
+- [Cryptoeconomics](#cryptoeconomics)
 - [Useful Links](#useful-links)
 
 ---
@@ -674,7 +675,7 @@ mechanism collects and disburses the same amount of money from and to the agents
 
 A transferable utility mechanism is **individual rational** when, in equilibrium no agent loses by 
 participating in the mechanism, i.e. the valuation subtracting the payment for every agent is not negative.
-- ex interum individual rational - holds for every possible valuation of the individual, but averages over the possible 
+- ex interim individual rational - holds for every possible valuation of the individual, but averages over the possible 
 valuations of the other agents
 - ex post - holds for every possible valuation of the individual and over the possible 
 valuations of the other agents
@@ -717,6 +718,12 @@ e.g. max or min)
 Trade is strategy-proof: 
 - An agent have a private value for buying (or selling) an indivisible good. He declares this value truthfully. 
 - Other agents declare whether they are willing to buy or sell at that price.
+
+---
+
+### Cryptoeconomics
+
+
 
 ---
 
