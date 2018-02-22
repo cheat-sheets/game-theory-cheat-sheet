@@ -18,7 +18,7 @@ biology.
 - [Social Choice](#social-choice)
 - [Mechanism Design](#mechanism-design)
 - [VCG](#vcg)
-- [Cryptoeconomics](#https://github.com/medvedev1088/cryptoeconomics-cheat-sheet)
+- [Cryptoeconomics](https://github.com/medvedev1088/cryptoeconomics-cheat-sheet)
 - [Useful Links](#useful-links)
 
 ---
