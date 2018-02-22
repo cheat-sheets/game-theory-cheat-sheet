@@ -17,6 +17,7 @@ biology.
 - [Coalitional Games](#coalitional-games)
 - [Social Choice](#social-choice)
 - [Mechanism Design](#mechanism-design)
+- [VCG](#vcg)
 - [Cryptoeconomics](#cryptoeconomics)
 - [Useful Links](#useful-links)
 
@@ -718,6 +719,128 @@ e.g. max or min)
 Trade is strategy-proof: 
 - An agent have a private value for buying (or selling) an indivisible good. He declares this value truthfully. 
 - Other agents declare whether they are willing to buy or sell at that price.
+
+---
+
+### VCG
+
+The **Vickrey-Clarke-Groves** (VCG) mechanism is a general way for self-interested agents to choose a social-welfare maximizing outcome. It works
+in quasilinear utility settings, i.e. where monetary payments are applied, although has some weaknesses (listed below).
+
+**Examples of where it can be used**
+
+- Privatization - a government privatizing a public utility like a power plant doesn't aim to maximize revenue, 
+ but to ensure that the right buyer wins. 
+- Building a bridge - businesses on both sides of a river need to decide whether to build a bridge, 
+ and if so how to pay for it.
+- Scheduling meetings between people who value times differently and may not tell the truth
+- Buying a path in a network - shipping along privately owned railroads
+
+**Qualities**
+- truthful - has truth as a dominant strategy
+- Pareto efficient - makes efficient choice (not including payments)
+
+Under additional assumptions about the setting, can satisfy: 
+ - Weak budget balance 
+ - Interim individual rationality
+ 
+**History**
+- Vickrey was the first who defined them in auction settings - 2nd price auctions, Vickrey auctions
+- Clarke generalized it to a more general class of settings and defined a pivotal mechanisms
+- Groves gave a more general class of such mechanisms. 
+ 
+---
+
+**Groves** mechanism - a direct transferable utility mechanism such that:
+  - it selects the outcome that maximizes the total utility for all agents
+  - every agent:
+      - gets paid everyone else's utility under the allocation that is actually chosen, except his own 
+      (but he gets that directly as utility)
+      - gets charged an amount based on an arbitrary function of the values of the other agents
+
+**Vickrey-Clarke-Groves** (VCG) mechanism (aka **Pivotal mechanism**) - a Groves mechanism such 
+that:
+  - it selects the outcome that maximizes the total utility for all agents
+  - every agent pays his "social cost":
+      - gets paid everyone else's utility under the allocation that is actually chosen, except his own 
+      (but he gets that directly as utility)
+      - gets charged everyone's utility in the world where he doesn't participate
+      
+In the VCG mechanism:
+ - agents who don't affect the outcome pay 0 
+ - (pivotal) agents who make things worse for others by existing, pay more than 0
+ - (pivotal) agents who make things better for others by existing, get paid
+
+#### Theorem
+
+Truth telling is a dominant strategy under any Groves mechanism including the pivotal  mechanism (a VCG mechanism)
+
+#### Theorem (Green-Laffont)
+
+Suppose that for all agents any utility function is possible. Then a Pareto efficient mechanism has truthful 
+reporting as a dominant strategy for all agents and preferences only if it is Groves mechanism.
+
+---
+
+#### VCG Limitations
+
+**Privacy**
+
+VCG requires agents to fully reveal their private information. This private information may have value to agents 
+that extends beyond the current interaction. For example, the agents may know that they will compete with each 
+other again in the future.
+
+**Susceptibility to collusion**
+
+Agents can benefit by colluding. For example 2 agents can increase their valuation for an outcome, 
+which will decrease their payment.
+
+**VCG is not frugal**
+
+The gap between agent's true cost and the payment they could receive under VCG is unbounded. 
+VCG can end up paying  arbitrarily more than an agent is willing to accept (or equivalently charging 
+arbitrarily less than an agent is willing to pay).
+
+**Revenue Monotonicity Violated**
+
+Revenue always weakly increases as agents are added. An agent could pretend to be 2 agents and eliminate 
+his payment. (Sybil attack)
+
+**Cannot Return All Revenue to Agents**
+
+We might want to find some way of returning the mechanism's profits back the agents. 
+However, the possibility of receiving a rebate after the mechanism has been run changes the agents' incentives. 
+
+---
+
+**Theorem**
+
+The VCG mechanism is **ex-post individual rational** when the choice set monotonicity and no negative externalities 
+properties hold.
+
+An environment exhibits **choice-set monotonicity** if for all agents the set of outcomes that are achievable 
+without that agent present is a weak subset  of the set of outcomes that are possible when that agent is present.
+
+An environment exhibits **no negative externalitites** if for all agents and all choices that can be made 
+without that agent, the agent's own valuation for each of these choices is non-negative. 
+
+---
+
+**Theorem**
+
+The VCG mechanism is weakly budget-balanced when the **no single-agent effect** property holds.
+
+**No single-agent effect** - if I drop an agent *i* and then I pick some other choice instead without *i*, 
+everybody other than *i* is at least as happy with the new choice as with the old choice.
+
+**Theorem (Krishna & Perry, 1998)**
+
+In any Bayesian game setting in which VCG is ex post individually rational, VCG collects at least as much revenue 
+as any other efficient and ex interim individually-rational mechanism. 
+
+A useful  corollary: VCG is as budget balanced as any efficient mechanism can be: it satisfies weak budget 
+balance in every case where any dominant strategy, efficient and ex interim individually-rational 
+mechanism is able to.
 
 ---
 
