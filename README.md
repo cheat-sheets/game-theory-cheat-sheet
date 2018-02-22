@@ -18,7 +18,7 @@ biology.
 - [Social Choice](#social-choice)
 - [Mechanism Design](#mechanism-design)
 - [VCG](#vcg)
-- [Cryptoeconomics](#cryptoeconomics)
+- [Cryptoeconomics](#https://github.com/medvedev1088/cryptoeconomics-cheat-sheet)
 - [Useful Links](#useful-links)
 
 ---
@@ -841,12 +841,6 @@ as any other efficient and ex interim individually-rational mechanism.
 A useful  corollary: VCG is as budget balanced as any efficient mechanism can be: it satisfies weak budget 
 balance in every case where any dominant strategy, efficient and ex interim individually-rational 
 mechanism is able to.
-
----
-
-### Cryptoeconomics
-
-
 
 ---
 
