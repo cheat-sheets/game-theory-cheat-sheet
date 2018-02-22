@@ -852,3 +852,4 @@ mechanism is able to.
 - Game Theory II: Advanced Applications: https://www.coursera.org/learn/game-theory-2
 - An Introduction to Decision Theory by Martin Peterson: https://www.amazon.com/Introduction-Decision-Cambridge-Introductions-Philosophy/dp/0521716543
 - http://www.gametheory.net/
+- A Crash Course in Mechanism Design for Cryptoeconomic Applications https://medium.com/blockchannel/a-crash-course-in-mechanism-design-for-cryptoeconomic-applications-a9f06ab6a976
