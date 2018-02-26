@@ -17,7 +17,7 @@ biology.
 - [Coalitional Games](#coalitional-games)
 - [Social Choice](#social-choice)
 - [Mechanism Design](#mechanism-design)
-- [VCG](#vcg)
+  - [VCG](#vcg)
 - [Cryptoeconomics](https://github.com/medvedev1088/cryptoeconomics-cheat-sheet)
 - [Useful Links](#useful-links)
 
@@ -725,7 +725,7 @@ Trade is strategy-proof:
 ### VCG
 
 The **Vickrey-Clarke-Groves** (VCG) mechanism is a general way for self-interested agents to choose a social-welfare maximizing outcome. It works
-in quasilinear utility settings, i.e. where monetary payments are applied, although has some weaknesses (listed below).
+in quasilinear utility settings, i.e. where monetary payments are applied, although has some limitations (listed below).
 
 **Examples of where it can be used**
 
