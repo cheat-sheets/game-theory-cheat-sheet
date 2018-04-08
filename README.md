@@ -657,7 +657,7 @@ Alternative definition of a **direct mechanism with private values**:
 
 #### Mechanism Qualities
 
-**Direct Mechanism** - a mechanism where the set of join actions is equal to the set of joint types, i.e.
+**Direct Mechanism** - a mechanism where the set of joint actions is equal to the set of joint types, i.e.
 the agents have to declare their types to the mechanism.
 
 **Incentive Compatible** (aka **Truthful** or **Strategy-proof**) **Mechanism** - a direct 
