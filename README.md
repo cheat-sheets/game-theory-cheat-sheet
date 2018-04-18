@@ -746,7 +746,7 @@ Under additional assumptions about the setting, can satisfy:
  
 **History**
 - Vickrey was the first who defined them in auction settings - 2nd price auctions, Vickrey auctions
-- Clarke generalized it to a more general class of settings and defined a pivotal mechanisms
+- Clarke generalized it to a more general class of settings and defined pivotal mechanisms
 - Groves gave a more general class of such mechanisms. 
  
 ---
