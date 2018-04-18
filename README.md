@@ -19,7 +19,7 @@ biology.
 - [Mechanism Design](#mechanism-design)
   - [VCG](#vcg)
 - [Cryptoeconomics](https://github.com/medvedev1088/cryptoeconomics-cheat-sheet)
-- [Useful Links](#useful-links)
+- [Resources](#resources)
 
 ---
 
@@ -657,7 +657,7 @@ Alternative definition of a **direct mechanism with private values**:
 
 #### Mechanism Qualities
 
-**Direct Mechanism** - a mechanism where the set of join actions is equal to the set of joint types, i.e.
+**Direct Mechanism** - a mechanism where the set of joint actions is equal to the set of joint types, i.e.
 the agents have to declare their types to the mechanism.
 
 **Incentive Compatible** (aka **Truthful** or **Strategy-proof**) **Mechanism** - a direct 
@@ -844,7 +844,11 @@ mechanism is able to.
 
 ---
 
-### Useful Links
+### Cryptoeconomics
+
+[https://github.com/medvedev1088/cryptoeconomics-cheat-sheet](https://github.com/medvedev1088/cryptoeconomics-cheat-sheet)
+
+### Resources
 
 - Game Solver (2x2 matrix games): http://mindyourdecisions.com/GameSolver.html
 - Game Theory 101: https://www.youtube.com/watch?v=NSVmOC_5zrE&list=PLKI1h_nAkaQoDzI4xDIXzx6U2ergFmedo
