@@ -183,7 +183,7 @@ and b is any real number. Expected utilities are identical to positive affine tr
 - There are 3 NE:
   - Both players hunt stag
   - Both players hunt hare
-  - Mixed strategies NE: He hunts stag with probability 2/3, She hunts stag with probability 2/3.
+  - Mixed strategies NE: He hunts stag with probability 1/2, She hunts stag with probability 1/2.
 
 #### Pure Coordination Game
  
