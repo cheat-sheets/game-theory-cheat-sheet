@@ -5,7 +5,7 @@ decision-makers.
 Game theory is mainly used in economics, political science, and psychology, as well as logic, computer science and 
 biology.
 
-### Table of Content
+### Table of Contents
 
 - [Game Representations](#game-representations)
 - [Classification of Games](#classification-of-games)
