@@ -7,6 +7,7 @@
 </defs>
 <g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)" aria-hidden="true">
  <use xlink:href="#E1-MJMATHI-50" x="0" y="0"></use>
+ /. this is comment./
  <use transform="scale(0.707)" xlink:href="#E1-MJMATHI-52" x="1109" y="509"></use>
  <use transform="scale(0.707)" xlink:href="#E1-MJMATHI-69" x="908" y="-430"></use>
 </g>
