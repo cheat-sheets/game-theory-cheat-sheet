@@ -139,7 +139,7 @@ and b is any real number. Expected utilities are identical to positive affine tr
 | **Stay silent** | -1,-1                 | -3,0                |
 | **Betray**      | 0,-3                  | **-2,-2**           |
 
-- There is 1 NE:
+- There is 1 NE (Nash Equilibrium):
   - Both players betray. 
 - This is a [dominant strategies NE](#nash-equilibrium). 
 - It is also the only non [Pareto optimal outcome](#pareto-optimality) in this game.
